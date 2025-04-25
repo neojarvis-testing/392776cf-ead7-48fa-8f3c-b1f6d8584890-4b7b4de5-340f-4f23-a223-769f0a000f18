@@ -2,13 +2,8 @@ package stepdefinitions;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-
 import io.cucumber.java.After;
 import io.cucumber.java.AfterAll;
 import io.cucumber.java.Before;
