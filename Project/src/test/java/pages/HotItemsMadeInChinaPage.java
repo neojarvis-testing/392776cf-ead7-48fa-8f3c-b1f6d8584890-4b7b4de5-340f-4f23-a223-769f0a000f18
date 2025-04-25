@@ -76,7 +76,7 @@ public class HotItemsMadeInChinaPage {
     /*
     * a. Method Name: verifyFurnitureUrl
     * b. Author Name: Krishna
-    * c. Description: Retrieves the current URL, verifies its content from Excel data, and logs the result.
+    * c. Description: Retrieves the current URL, verifies its content from Feature File, and logs the result.
     * d. Return Type: Void
     * e. Parameter List: None
     */
@@ -94,7 +94,7 @@ public class HotItemsMadeInChinaPage {
     /*
     * a. Method Name: verifyFurnitureTitle
     * b. Author Name: Krishna
-    * c. Description: Retrieves the page title, verifies its content from Excel data, and logs the result.
+    * c. Description: Retrieves the page title, verifies its content from Feature File, and logs the result.
     * d. Return Type: Void
     * e. Parameter List: None
     */
@@ -132,7 +132,7 @@ public class HotItemsMadeInChinaPage {
     /*
     * a. Method Name: verifyApparelUrl
     * b. Author Name: Krishna
-    * c. Description: Retrieves the current URL, verifies its content from Excel data, and logs the result.
+    * c. Description: Retrieves the current URL, verifies its content from Feature File, and logs the result.
     * d. Return Type: Void
     * e. Parameter List: None
     */
@@ -150,7 +150,7 @@ public class HotItemsMadeInChinaPage {
     /*
     * a. Method Name: verifyApparelTitle
     * b. Author Name: Krishna
-    * c. Description: Retrieves the Title, verifies its content from Excel data, and logs the result.
+    * c. Description: Retrieves the Title, verifies its content from Feature File, and logs the result.
     * d. Return Type: Void
     * e. Parameter List: None
     */
@@ -188,7 +188,7 @@ public class HotItemsMadeInChinaPage {
     /*
     * a. Method Name: verifyAutoPartsUrl
     * b. Author Name: Krishna
-    * c. Description: Retrieves the current URL, verifies its content from Excel data, and logs the result.
+    * c. Description: Retrieves the current URL, verifies its content from Feature File, and logs the result.
     * d. Return Type: Void
     * e. Parameter List: None
     */
@@ -206,7 +206,7 @@ public class HotItemsMadeInChinaPage {
     /*
     * a. Method Name: verifyAutoPartsTitle
     * b. Author Name: Krishna
-    * c. Description: Retrieves the Auto Parts title, verifies its content from Excel data, and logs the result.
+    * c. Description: Retrieves the Auto Parts title, verifies its content from Feature File, and logs the result.
     * d. Return Type: Void
     * e. Parameter List: None
     */
@@ -244,7 +244,7 @@ public class HotItemsMadeInChinaPage {
     /*
     * a. Method Name: verifyBagsCasesUrl
     * b. Author Name: Krishna
-    * c. Description: Retrieves the current URL, verifies its content from Excel data, and logs the result.
+    * c. Description: Retrieves the current URL, verifies its content from Feature File, and logs the result.
     * d. Return Type: Void
     * e. Parameter List: None
     */
@@ -262,7 +262,7 @@ public class HotItemsMadeInChinaPage {
     /*
     * a. Method Name: verifyBagsCasesTitle
     * b. Author Name: Krishna
-    * c. Description: Retrieves the Bags Cases title, verifies its content from Excel data, and logs the result.
+    * c. Description: Retrieves the Bags Cases title, verifies its content from Feature File, and logs the result.
     * d. Return Type: Void
     * e. Parameter List: None
     */
@@ -300,7 +300,7 @@ public class HotItemsMadeInChinaPage {
     /*
     * a. Method Name: verifyComputerProductsUrl
     * b. Author Name: Krishna
-    * c. Description: Retrieves the current URL, verifies its content from Excel data, and logs the result.
+    * c. Description: Retrieves the current URL, verifies its content from Feature File, and logs the result.
     * d. Return Type: Void
     * e. Parameter List: None
     */
@@ -318,7 +318,7 @@ public class HotItemsMadeInChinaPage {
     /*
     * a. Method Name: verifyComputerProductsTitle
     * b. Author Name: Krishna
-    * c. Description: Retrieves the page title, verifies its content from Excel data, and logs the result.
+    * c. Description: Retrieves the page title, verifies its content from Feature File, and logs the result.
     * d. Return Type: Void
     * e. Parameter List: None
     */
@@ -356,7 +356,7 @@ public class HotItemsMadeInChinaPage {
     /*
     * a. Method Name: verifyConsumerElectronicsUrl
     * b. Author Name: Krishna
-    * c. Description: Retrieves the current URL, verifies its content from Excel data, and logs the result.
+    * c. Description: Retrieves the current URL, verifies its content from Feature File, and logs the result.
     * d. Return Type: Void
     * e. Parameter List: None
     */
@@ -374,7 +374,7 @@ public class HotItemsMadeInChinaPage {
     /*
     * a. Method Name: verifyConsumerElectronicsTitle
     * b. Author Name: Krishna
-    * c. Description: Retrieves the page title, verifies its content from Excel data, and logs the result.
+    * c. Description: Retrieves the page title, verifies its content from Feature File, and logs the result.
     * d. Return Type: Void
     * e. Parameter List: None
     */
@@ -412,7 +412,7 @@ public class HotItemsMadeInChinaPage {
     /*
     * a. Method Name: verifyElectricalEquipmentUrl
     * b. Author Name: Krishna
-    * c. Description: Retrieves the current URL, verifies its content from Excel data, and logs the result.
+    * c. Description: Retrieves the current URL, verifies its content from Feature File, and logs the result.
     * d. Return Type: Void
     * e. Parameter List: None
     */
@@ -430,7 +430,7 @@ public class HotItemsMadeInChinaPage {
     /*
     * a. Method Name: verifyElectricalEquipmentTitle
     * b. Author Name: Krishna
-    * c. Description: Retrieves the page title, verifies its content from Excel data, and logs the result.
+    * c. Description: Retrieves the page title, verifies its content from Feature File, and logs the result.
     * d. Return Type: Void
     * e. Parameter List: None
     */
@@ -468,7 +468,7 @@ public class HotItemsMadeInChinaPage {
     /*
     * a. Method Name: verifyElectronicComponentsUrl
     * b. Author Name: Krishna
-    * c. Description: Retrieves the current URL, verifies its content from Excel data, and logs the result.
+    * c. Description: Retrieves the current URL, verifies its content from Feature File, and logs the result.
     * d. Return Type: Void
     * e. Parameter List: None
     */
@@ -486,7 +486,7 @@ public class HotItemsMadeInChinaPage {
     /*
     * a. Method Name: verifyElectronicComponentsTitle
     * b. Author Name: Krishna
-    * c. Description: Retrieves the page title, verifies its content from Excel data, and logs the result.
+    * c. Description: Retrieves the page title, verifies its content from Feature File, and logs the result.
     * d. Return Type: Void
     * e. Parameter List: None
     */
@@ -524,7 +524,7 @@ public class HotItemsMadeInChinaPage {
     /*
     * a. Method Name: verifyGiftsCraftsUrl
     * b. Author Name: Krishna
-    * c. Description: Retrieves the current URL, verifies its content from Excel data, and logs the result.
+    * c. Description: Retrieves the current URL, verifies its content from Feature File, and logs the result.
     * d. Return Type: Void
     * e. Parameter List: None
     */
@@ -542,7 +542,7 @@ public class HotItemsMadeInChinaPage {
     /*
     * a. Method Name: verifyGiftsCraftsTitle
     * b. Author Name: Krishna
-    * c. Description: Retrieves the page title, verifies its content from Excel data, and logs the result.
+    * c. Description: Retrieves the page title, verifies its content from Feature File, and logs the result.
     * d. Return Type: Void
     * e. Parameter List: None
     */
@@ -580,7 +580,7 @@ public class HotItemsMadeInChinaPage {
     /*
     * a. Method Name: verifyMotorCyclesUrl
     * b. Author Name: Krishna
-    * c. Description: Retrieves the current URL, verifies its content from Excel data, and logs the result.
+    * c. Description: Retrieves the current URL, verifies its content from Feature File, and logs the result.
     * d. Return Type: Void
     * e. Parameter List: None
     */
@@ -598,7 +598,7 @@ public class HotItemsMadeInChinaPage {
     /*
     * a. Method Name: verifyMotorCyclesTitle
     * b. Author Name: Krishna
-    * c. Description: Retrieves the page title, verifies its content from Excel data, and logs the result.
+    * c. Description: Retrieves the page title, verifies its content from Feature File, and logs the result.
     * d. Return Type: Void
     * e. Parameter List: None
     */
@@ -636,7 +636,7 @@ public class HotItemsMadeInChinaPage {
     /*
     * a. Method Name: verifySealingPackageUrl
     * b. Author Name: Krishna
-    * c. Description: Retrieves the current URL, verifies its content from Excel data, and logs the result.
+    * c. Description: Retrieves the current URL, verifies its content from Feature File, and logs the result.
     * d. Return Type: Void
     * e. Parameter List: None
     */
@@ -654,7 +654,7 @@ public class HotItemsMadeInChinaPage {
     /*
     * a. Method Name: verifySealingPackageTitle
     * b. Author Name: Krishna
-    * c. Description: Retrieves the page title, verifies its content from Excel data, and logs the result.
+    * c. Description: Retrieves the page title, verifies its content from Feature File, and logs the result.
     * d. Return Type: Void
     * e. Parameter List: None
     */
@@ -692,7 +692,7 @@ public class HotItemsMadeInChinaPage {
     /*
     * a. Method Name: verifyBuildingMaterialsUrl
     * b. Author Name: Krishna
-    * c. Description: Retrieves the current URL, verifies its content from Excel data, and logs the result.
+    * c. Description: Retrieves the current URL, verifies its content from Feature File, and logs the result.
     * d. Return Type: Void
     * e. Parameter List: None
     */
@@ -710,7 +710,7 @@ public class HotItemsMadeInChinaPage {
     /*
     * a. Method Name: verifyBuildingMaterialsTitle
     * b. Author Name: Krishna
-    * c. Description: Retrieves the page title, verifies its content from Excel data, and logs the result.
+    * c. Description: Retrieves the page title, verifies its content from Feature File, and logs the result.
     * d. Return Type: Void
     * e. Parameter List: None
     */

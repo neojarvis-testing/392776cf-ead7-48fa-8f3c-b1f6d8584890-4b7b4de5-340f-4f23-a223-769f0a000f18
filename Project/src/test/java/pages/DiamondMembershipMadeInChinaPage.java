@@ -61,7 +61,7 @@ public class DiamondMembershipMadeInChinaPage {
     /*
     * a. Method Name: enterDataToSearchBar
     * b. Author Name: Krishna
-    * c. Description: Enters data from an Excel sheet into the search bar and clicks the search icon.
+    * c. Description: Enters data from an Feature File into the search bar and clicks the search icon.
     * d. Return Type: Void
     * e. Parameter List: None
     */
