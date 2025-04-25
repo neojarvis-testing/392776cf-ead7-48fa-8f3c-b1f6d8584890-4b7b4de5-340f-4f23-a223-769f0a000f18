@@ -1,5 +1,5 @@
 Feature: HotItems Functionality
-    @ta
+    
     Scenario: Verifying all HotItems
         Given I close the PopUp.
         When I click on the Furniture.
