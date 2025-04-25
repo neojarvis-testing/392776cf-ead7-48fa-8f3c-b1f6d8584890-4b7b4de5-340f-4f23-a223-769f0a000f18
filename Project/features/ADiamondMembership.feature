@@ -1,12 +1,12 @@
 Feature: Diamond Membership Functionality
 
-    Scenario:
-        When I clicks on the Popup  
-        And I clicks on the search bar  
-        And I enters data into the search bar and clicks search  
-        And I result should contain "Electronics"  
-        And I clicks on the supplier list  
-        And I clicks on the consumer electronics option  
-        And I result should contain "Consumer"  
-        And I selects the IS9000 filter  
-        Then I result should contain "9000"  
+    Scenario: Search For Electronics
+        Given I click on the Popup.
+        When I clicked on the Search Bar.  
+        And I send data into the Search Bar and clicked on Search Icon "Electronics".  
+        And I Verify text "Electronics".
+        And I click on the Supplier List.  
+        And I click on the Consumer.  
+        And I Verify text "Consumer"  
+        And I click on IS9000 filter  
+        Then I Verify filter "9000"

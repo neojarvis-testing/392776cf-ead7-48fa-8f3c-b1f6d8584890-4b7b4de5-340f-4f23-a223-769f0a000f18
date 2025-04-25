@@ -69,9 +69,9 @@ public class DiamondMembershipMadeInChinaPage {
     * d. Return Type: Void
     * e. Parameter List: None
     */
-    public void enterDataToSearchBar(){
+    public void enterDataToSearchBar(String value){
         try {
-            helper.sendKeys(MadeInChinaDiamondMembershipPageLocator.searchBar, ExcelReader.readData(System.getProperty(directory)+excelPath, sheetName, 0, 1));
+            helper.sendKeys(MadeInChinaDiamondMembershipPageLocator.searchBar, value);
             helper.clickOnElement(MadeInChinaDiamondMembershipPageLocator.searchIcon);
             LoggerHandler.info("Clicked on Search icon");
             test.log(Status.PASS, "Clicked on Search icon");
@@ -87,10 +87,10 @@ public class DiamondMembershipMadeInChinaPage {
     * d. Return Type: Void
     * e. Parameter List: None
     */
-    public void verifyElectronics(){
+    public void verifyElectronics(String value){
         try {
             String electronics = helper.getText(MadeInChinaDiamondMembershipPageLocator.verifyWord);
-            Assert.assertTrue(electronics.contains(ExcelReader.readData(System.getProperty(directory)+excelPath, sheetName, 1, 1)));
+            Assert.assertTrue(electronics.contains(value));
             LoggerHandler.info("Verified Electronics");
             test.log(Status.PASS, "Verified Electronics");
         } catch (Exception e) {
@@ -141,10 +141,10 @@ public class DiamondMembershipMadeInChinaPage {
     * d. Return Type: Void
     * e. Parameter List: None
     */
-    public void verifyConsumer(){
+    public void verifyConsumer(String value){
         try {
             String consumer = helper.getText(MadeInChinaDiamondMembershipPageLocator.filterconsumerElectronics);
-            Assert.assertTrue(consumer.contains(ExcelReader.readData(System.getProperty(directory)+excelPath, sheetName, 1, 2)));
+            Assert.assertTrue(consumer.contains(value));
             LoggerHandler.info("Verified Consumer");
             test.log(Status.PASS, "Verified Consumer");
         } catch (Exception e) {
@@ -177,10 +177,10 @@ public class DiamondMembershipMadeInChinaPage {
     * d. Return Type: Void
     * e. Parameter List: None
     */
-    public void verifyIs9000(){
+    public void verifyIs9000(String value){
         try {
             String isfilter = helper.getText(MadeInChinaDiamondMembershipPageLocator.filterIs9000);
-            Assert.assertTrue(isfilter.contains(ExcelReader.readData(System.getProperty(directory)+excelPath, sheetName, 1, 3)));
+            Assert.assertTrue(isfilter.contains(value));
             LoggerHandler.info("Verified Is9000");
             test.log(Status.PASS, "Verified Is9000");
         } catch (Exception e) {
