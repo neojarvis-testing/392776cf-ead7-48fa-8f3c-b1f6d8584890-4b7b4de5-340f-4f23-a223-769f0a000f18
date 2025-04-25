@@ -9,7 +9,7 @@ public class MadeInChinaSignInPageLocator {
     public static final By signinicon = By.cssSelector("i[class='ob-icon icon-personal nlr-icon']");
     public static final By joinfree = By.cssSelector("div[class='join-link']");
     public static final By email = By.cssSelector("input[name='email']");
-    public static final By checkbox = By.cssSelector("label[class='ft-checkbox'] span[class='ft-checkbox-front']");
+    public static final By checkbox = By.className("ft-checkbox-front");
     public static final By verify = By.xpath("//button[text()='Verify Email']");
     public static final By next = By.cssSelector("button[class='ft-btn ft-btn-primary submit-btn']");
     public static final By verificationerror = By.xpath("//div[text()='Please enter the Verification Code.']");

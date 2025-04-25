@@ -97,9 +97,9 @@ public class MadeInChinaSignInPage {
    * Parameters: None
    * ReturnType: void
    */
-    public void enterDataToEmail(){
+    public void enterDataToEmail(String Email){
         try {
-            helper.sendKeys(MadeInChinaSignInPageLocator.email,"sair27774@gmail.com");
+            helper.sendKeys(MadeInChinaSignInPageLocator.email,Email);
             test.log(Status.PASS,"entering data to email success");
             LoggerHandler.info("entering data to email success");            
         } catch (Exception e) {
@@ -116,6 +116,8 @@ public class MadeInChinaSignInPage {
    */
     public void clickOnIagree(){
         try {
+            helper.waitForElementToBeClickable(MadeInChinaSignInPageLocator.checkbox,10);
+            Thread.sleep(1000);
             helper.clickOnElement(MadeInChinaSignInPageLocator.checkbox);
             test.log(Status.PASS,"Clicking I agree to checkbox success");
             LoggerHandler.info("Clicking I agree to checkbox success");           
@@ -167,10 +169,10 @@ public class MadeInChinaSignInPage {
    * Parameters: None
    * ReturnType: void
    */
-    public void verifyVerificationCode(){
+    public void verifyVerificationCode(String message){
         try {
             String text = helper.getText(MadeInChinaSignInPageLocator.verificationerror);
-            Assert.assertTrue(text.contains("Please enter the verification code."));
+            Assert.assertTrue(text.contains(message));
             test.log(Status.PASS,"scuuessfully verified text");
             LoggerHandler.info("successfully verified text");            
         } catch (AssertionError e) {
@@ -204,10 +206,10 @@ public class MadeInChinaSignInPage {
    * Parameters: None
    * ReturnType: void
    */
-    public void enterEmailToLogin(){
+    public void enterEmailToLogin(String email){
         try {
             helper.clickOnElement(MadeInChinaSignInPageLocator.inputemail);
-            helper.sendKeys(MadeInChinaSignInPageLocator.inputemail,"rdfghjkjhg@gmail.com");
+            helper.sendKeys(MadeInChinaSignInPageLocator.inputemail,email);
             test.log(Status.PASS,"entering data in email success");
             LoggerHandler.info("entering data in email success");     
         } catch (Exception e) {
@@ -222,10 +224,10 @@ public class MadeInChinaSignInPage {
    * Parameters: None
    * ReturnType: void
    */
-    public void enterPasswordToLogin(){
+    public void enterPasswordToLogin(String password){
         try {
             helper.clickOnElement(MadeInChinaSignInPageLocator.password);
-            helper.sendKeys(MadeInChinaSignInPageLocator.password,"rdfghjk");
+            helper.sendKeys(MadeInChinaSignInPageLocator.password,password);
             test.log(Status.PASS,"entering data in password success");
             LoggerHandler.info("entering data in password success");                
         } catch (Exception e) {
@@ -257,10 +259,10 @@ public class MadeInChinaSignInPage {
    * Parameters: None
    * ReturnType: void
    */
-    public void verifyEmailErrorMessage(){
+    public void verifyEmailErrorMessage(String message){
         try {
             String text = helper.getText(MadeInChinaSignInPageLocator.logionerror);
-            Assert.assertTrue(text.contains("This Email Address is not yet registered"));
+            Assert.assertTrue(text.contains(message));
             test.log(Status.PASS,"sucuessfully verified text");
             LoggerHandler.info("sucessfully verified  text");           
         } catch (AssertionError e) {
@@ -309,10 +311,10 @@ public class MadeInChinaSignInPage {
    * Parameters: None
    * ReturnType: void
    */
-    public void verifyOnImageText(){
+    public void verifyOnImageText(String message){
         try {
             String text = helper.getText(MadeInChinaSignInPageLocator.lasterror);
-            Assert.assertTrue(text.contains("Please enter the text in the image"));
+            Assert.assertTrue(text.contains(message));
             test.log(Status.PASS,"scuessfully verified text");
             LoggerHandler.info("scuuessfully verified  text");           
         } catch (AssertionError e) {
@@ -320,27 +322,6 @@ public class MadeInChinaSignInPage {
             LoggerHandler.error("text verification has failed");
         }
     }
-    public void case1(){
-        verifySignIn();
-        hoverSignIn();
-        clickJoinFree();
-        clickOnEmailBar();
-        enterDataToEmail();
-        clickOnIagree();
-        clickOnVerify();
-        // switchnewwindow1();
-        // clicknext();
-        // verifyverification();
-        // // Base.driver.navigate().refresh();
-        // clicksignInNOw();
-        // enteremailtologin();
-        // enterpasswordtologin();
-        // clicklogin();
-        // verifyaddress();
-        // clickonforgetpassword();
-        // switchnewwindow1();
-        // clickcontinue();
-        // verifyimage();
-    }
+
     
 }
