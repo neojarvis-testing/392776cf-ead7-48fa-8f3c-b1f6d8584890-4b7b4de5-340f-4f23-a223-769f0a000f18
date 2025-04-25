@@ -65,7 +65,7 @@ public class MadeInChinaBuyerModulePage {
         try {
             helper.waitForElementToBeVisible(MadeInChinaBuyerModulePageLocator.ClickNewUserGuide, 10);
             helper.clickOnElement(MadeInChinaBuyerModulePageLocator.ClickNewUserGuide);
-            helper.switchToAllTabs();
+            helper.switchToNewWindow();
             Screenshot.captureFullScreenshot("New User Guide");
             Reporter.attachScreenshotToReport("New User guide", test, "Screenshot attached to the NewUserGuide Report");
             test.log(Status.PASS, "Clicked on the new user guide");
@@ -121,7 +121,7 @@ public class MadeInChinaBuyerModulePage {
     public void clickLogo(){
         try {
             helper.waitForElementToBeVisible(MadeInChinaBuyerModulePageLocator.ClickLogo, 10);
-            helper.clickOnElement(MadeInChinaBuyerModulePageLocator.ClickLogo);
+            helper.clickAndSwitch(MadeInChinaBuyerModulePageLocator.ClickLogo);
             Screenshot.captureFullScreenshot("Made in china Logo");
             Reporter.attachScreenshotToReport("Made in china Logo", test, "Screentshot attached to the logo report");
             test.log(Status.PASS, "Clicked on Logo ");
@@ -140,8 +140,7 @@ public class MadeInChinaBuyerModulePage {
     public void clickAuditedSuppliers(){
         try {
             helper.waitForElementToBeVisible(MadeInChinaBuyerModulePageLocator.ClickAuditedSuppliers, 10);
-            helper.clickOnElement(MadeInChinaBuyerModulePageLocator.ClickAuditedSuppliers);
-            helper.switchToNewWindow();
+            helper.clickAndSwitch(MadeInChinaBuyerModulePageLocator.ClickAuditedSuppliers);
             Screenshot.captureFullScreenshot("Audited Suppliers");
             Reporter.attachScreenshotToReport("Audited Suppliers", test, " Audited Suppliers ScreenShot Attached to the report");
             test.log(Status.PASS, "Clicked on Audited Suppliers");
@@ -152,14 +151,15 @@ public class MadeInChinaBuyerModulePage {
         }
     }
     /*
-     * a.Method Name: verifyUrlSourceProducts
-     * b.Author Name: Samhitha
-     * c.Description: This method is used to verify the url which contains audited supplier
-     * d.Return Type: void
-     */
+    * a.Method Name: verifyUrlSourceProducts
+    * b.Author Name: Samhitha
+    * c.Description: This method is used to verify the url which contains audited supplier
+    * d.Return Type: void
+    */
     public void verifyURLSourceProducts(String url){
         try {
             String url2=Base.driver.getCurrentUrl();
+            System.out.println(url2);
             Assert.assertTrue(url2.contains(url));
             test.log(Status.PASS, "Verified url contains Audited Suppliers");
             LoggerHandler.info("Verified url contains Audited Suppliers");
@@ -169,14 +169,15 @@ public class MadeInChinaBuyerModulePage {
         }
     }
     /*
-     * a.Method Name: verifyTitleAudited
-     * b.Author Name: Samhitha
-     * c.Description: This method is used to Verify Title
-     * d.Return Type: void
-     */
+    * a.Method Name: verifyTitleAudited
+    * b.Author Name: Samhitha
+    * c.Description: This method is used to Verify Title
+    * d.Return Type: void
+    */
     public void verifyTitleAuditedSupplier(String text){
         try {
             String title2=Base.driver.getTitle();
+            System.out.println(title2);
             Assert.assertTrue(title2.contains(text));
             test.log(Status.PASS, "Audited Suppliers Title Verified Successfully");
             LoggerHandler.info("Audites Suppliers Title Verified Successfully");
@@ -186,16 +187,15 @@ public class MadeInChinaBuyerModulePage {
         }
     }
     /*
-     * a.Method Name: clickMeetSuppliers
-     * b.Author Name: Samhitha
-     * c.Description: This method is used to click on Meet suppliers
-     * d.Return Type: void
-     */
+    * a.Method Name: clickMeetSuppliers
+    * b.Author Name: Samhitha
+    * c.Description: This method is used to click on Meet suppliers
+    * d.Return Type: void
+    */
     public void clickMeetSuppliers(){
         try {
             helper.waitForElementToBeVisible(MadeInChinaBuyerModulePageLocator.ClickMeetSupplier, 10);
-            helper.clickOnElement(MadeInChinaBuyerModulePageLocator.ClickMeetSupplier);
-            helper.switchToAllTabs();
+            helper.clickAndSwitch(MadeInChinaBuyerModulePageLocator.ClickMeetSupplier);
             Screenshot.captureFullScreenshot("Meet Suppliers");
             Reporter.attachScreenshotToReport("Meet suppliers", test, "Meet suppliers ScreenShot Attached to report");
             test.log(Status.PASS, "Clicked on Meet suppliers link");
@@ -206,14 +206,17 @@ public class MadeInChinaBuyerModulePage {
         }
     }
     /*
-     * a.Method Name: verifyUrlPrivateSourcing
-     * b.Author Name: Samhitha
-     * c.Description: This method is used to verify the url which contains private sourcing meeting
-     * d.Return Type: void
-     */
+    * a.Method Name: verifyUrlPrivateSourcing
+    * b.Author Name: Samhitha
+    * c.Description: This method is used to verify the url which contains private sourcing meeting
+    * d.Return Type: void
+    */
     public void verifyURLPrivateSourcing(String url){
         try {
             String url3=Base.driver.getCurrentUrl();
+            System.out.println(url3);
+            Screenshot.captureFullScreenshot("Private Souring");
+            Reporter.attachScreenshotToReport("Private Sourcing", test, " Private Sourcing ScreenShot Attached to the report");
             Assert.assertTrue(url3.contains(url));
             test.log(Status.PASS, "Verified Private sourcing meeting url");
             LoggerHandler.info("Verified Private sourcing meeting url");
@@ -231,6 +234,7 @@ public class MadeInChinaBuyerModulePage {
     public void verifyTitleMeetSuppliers(String title){
         try {
             String title3=Base.driver.getTitle();
+            System.out.println(title3);
             Assert.assertTrue(title3.contains(title));
             test.log(Status.PASS, "Meet Suppliers Verified Successfully");
             LoggerHandler.info("Meet Suppliers Verified Successfully");
