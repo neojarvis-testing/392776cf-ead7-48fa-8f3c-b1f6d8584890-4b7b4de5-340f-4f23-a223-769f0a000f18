@@ -22,14 +22,14 @@ static ExtentReports report;
           * d.Return Type: void
           * e.Paramenter List:none
           */
-         @BeforeAll
-         public static void initializeReport(){
-             SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss");
-             String timestamp = dateFormat.format(new Date());
-             reportFilePath = System.getProperty("user.dir") + "/reports/MADE_IN_CHINA_Report" + timestamp + ".html";
-            report = Reporter.generateExtentReport(reportFilePath);
-          }
-          /*
+    @BeforeAll
+    public static void initializeReport(){
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss");
+        String timestamp = dateFormat.format(new Date());
+        reportFilePath = System.getProperty("user.dir") + "/reports/MADE_IN_CHINA_Report" + timestamp + ".html";
+        report = Reporter.generateExtentReport(reportFilePath);
+    }
+    /*
      * a. Method Name: openTheBrowser
      * b. Author Name: Team_09
      * c. Description: Opens the browser before each test.
@@ -39,8 +39,8 @@ static ExtentReports report;
     @Before
     public void openTheBrowser(){
         openBrowser();
-
     }
+    
     /*
      * a. Method Name: closeTheBrowser
      * b. Author Name: Team_09
