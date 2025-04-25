@@ -1,6 +1,6 @@
 package pages;
 
-import org.testng.Assert;
+import org.junit.Assert;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
@@ -44,11 +44,10 @@ public class MadeInChinaLedLightPage {
      * Parameters: None.
      * return type: void.
      */
-    public void clickAndSendData(){
+    public void clickAndSendData(String value){
         try {
             helper.waitForElementToBeVisible(MadeInChinaLedLightPageLocator.searchbar,3);
             helper.clickOnElement(MadeInChinaLedLightPageLocator.searchbar);
-            String value=ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Excel.xlsx", "sheet1", 0, 0);
             helper.sendKeys(MadeInChinaLedLightPageLocator.searchbar,value);
             helper.enterAction(MadeInChinaLedLightPageLocator.searchbar);
             test.log(Status.PASS, "clicked and sent data to search bar");
@@ -65,10 +64,10 @@ public class MadeInChinaLedLightPage {
      * Parameters: None.
      * return type: void.
      */
-    public void verifySearchResult(){
+    public void verifySearchResult(String value){
         try {
             String text = helper.getText(MadeInChinaLedLightPageLocator.verifyLed);
-            Assert.assertTrue(text.contains("LED lights"));
+            Assert.assertTrue(text.contains(value));
             test.log(Status.PASS, "Search result verified");
             LoggerHandler.info("Search result verified");
         } catch (Exception e) {
@@ -118,10 +117,9 @@ public class MadeInChinaLedLightPage {
      * Parameters: None.
      * return type: void.
      */
-    public void verifyFilter(){
+    public void verifyFilter(String value){
         try {
             String text = helper.getText(MadeInChinaLedLightPageLocator.verifyFilter);
-            String value=ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Excel.xlsx", "sheet1", 11, 0);
             Assert.assertEquals(text,value);
             test.log(Status.PASS, "Filter result verified");
             LoggerHandler.info("Filter result verified");
@@ -155,10 +153,9 @@ public class MadeInChinaLedLightPage {
      * Parameters: None.
      * return type: void.
      */
-    public void verifyInquiry(){
+    public void verifyInquiry(String value){
         try {
             String text = helper.getText(MadeInChinaLedLightPageLocator.verifyInquiry);
-            String value=ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Excel.xlsx", "sheet1", 12, 0);
             Assert.assertTrue(text.contains(value));
             test.log(Status.PASS, "Inquiry page is verified");
             LoggerHandler.info("Inquiry page is verified");
@@ -268,10 +265,9 @@ public class MadeInChinaLedLightPage {
      * Parameters: None.
      * return type: void.
      */
-    public void verifyHomePage(){
+    public void verifyHomePage(String value){
         try {
             String text = helper.getText(MadeInChinaLedLightPageLocator.verifyHomePage);
-            String value=ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Excel.xlsx", "sheet1", 13, 0);
             Assert.assertTrue(text.contains(value));
             test.log(Status.PASS, "Home page is verified");
             LoggerHandler.info("Home page is verified");
@@ -323,10 +319,9 @@ public class MadeInChinaLedLightPage {
      * Parameters: None.
      * return type: void.
      */
-    public void verifyLedTube(){
+    public void verifyLedTube(String value){
         try {
             String text = helper.getText(MadeInChinaLedLightPageLocator.verifyLedTube);
-            String value=ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Excel.xlsx", "sheet1",14 , 0);
             Assert.assertTrue(text.contains(value));
             test.log(Status.PASS, "LED Tube page is verified");
             LoggerHandler.info("LED Tube page is verified");

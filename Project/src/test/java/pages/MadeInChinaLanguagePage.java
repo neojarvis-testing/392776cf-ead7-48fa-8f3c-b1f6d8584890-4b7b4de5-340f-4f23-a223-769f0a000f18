@@ -1,6 +1,6 @@
 package pages;
 
-import org.testng.Assert;
+import org.junit.Assert;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
@@ -80,10 +80,10 @@ public class MadeInChinaLanguagePage {
      * Parameters: None.
      * return type: void.
      */
-    public void verifyCreateAccount(){
+    public void verifyCreateAccount(String value){
         try {
             String text = helper.getText(MadeInChinaLanguagePageLocator.verifyCreateAccount);
-            Assert.assertEquals(text,"Create an account");
+            Assert.assertEquals(text,value);
             test.log(Status.PASS, "Create account is displayed");
             LoggerHandler.info("Create account is displayed");
         } catch (Exception e) {
@@ -116,10 +116,9 @@ public class MadeInChinaLanguagePage {
      * Parameters: None.
      * return type: void.
      */
-    public void verifySignInNow(){
+    public void verifySignInNow(String value){
         try {
             String text = helper.getText(MadeInChinaLanguagePageLocator.verifySignIn);
-            String value=ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Excel.xlsx", "sheet1", 3, 0);
             Assert.assertEquals(text,value);
             test.log(Status.PASS, "Verified that we are on sign in page");
             LoggerHandler.info("Verified that we are on sign in page");
@@ -154,10 +153,9 @@ public class MadeInChinaLanguagePage {
      * Parameters: None.
      * return type: void.
      */
-    public void verifySpanish(){
+    public void verifySpanish(String value){
         try {
             String text = helper.getText(MadeInChinaLanguagePageLocator.languageVerify);
-            String value=ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Excel.xlsx", "sheet1", 4, 0);
             Assert.assertEquals(text,value);
             Screenshot.captureFullScreenshot("Spanish");
             test.log(Status.PASS, "changed to spanish");
@@ -193,10 +191,9 @@ public class MadeInChinaLanguagePage {
      * Parameters: None.
      * return type: void.
      */
-    public void verifyGerman(){
+    public void verifyGerman(String value){
         try {
             String text = helper.getText(MadeInChinaLanguagePageLocator.languageVerify);
-            String value=ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Excel.xlsx", "sheet1", 5, 0);
             Assert.assertEquals(text,value);
             Screenshot.captureFullScreenshot("German");
             test.log(Status.PASS, "changed to German");
@@ -232,10 +229,9 @@ public class MadeInChinaLanguagePage {
      * Parameters: None.
      * return type: void.
      */
-    public void verifyFrench(){
+    public void verifyFrench(String value){
         try {
             String text = helper.getText(MadeInChinaLanguagePageLocator.languageVerify);
-            String value=ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Excel.xlsx", "sheet1", 6, 0);
             Assert.assertEquals(text,value);
             Screenshot.captureFullScreenshot("French");
             test.log(Status.PASS, "changed to French");
@@ -271,10 +267,9 @@ public class MadeInChinaLanguagePage {
      * Parameters: None.
      * return type: void.
      */
-    public void verifyRussian(){
+    public void verifyRussian(String value){
         try {
             String text = helper.getText(MadeInChinaLanguagePageLocator.languageVerify);
-            String value=ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Excel.xlsx", "sheet1", 7, 0);
             Assert.assertEquals(text,value);
             Screenshot.captureFullScreenshot("Russian");
             test.log(Status.PASS, "changed to Russian");
@@ -310,10 +305,9 @@ public class MadeInChinaLanguagePage {
      * Parameters: None.
      * return type: void.
      */
-    public void verifyJapanese(){
+    public void verifyJapanese(String value){
         try {
             String text = helper.getText(MadeInChinaLanguagePageLocator.languageVerify);
-            String value=ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Excel.xlsx", "sheet1", 8, 0);
             Assert.assertEquals(text,value);
             Screenshot.captureFullScreenshot("Japanese");
             test.log(Status.PASS, "changed to Japanese");
@@ -349,10 +343,9 @@ public class MadeInChinaLanguagePage {
      * Parameters: None.
      * return type: void.
      */
-    public void verifyEnglish(){
+    public void verifyEnglish(String value){
         try {
             String text = helper.getText(MadeInChinaLanguagePageLocator.languageVerify);
-            String value=ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Excel.xlsx", "sheet1", 9, 0);
             Assert.assertEquals(text,value);
             Screenshot.captureFullScreenshot("English");
             test.log(Status.PASS, "changed to English");
