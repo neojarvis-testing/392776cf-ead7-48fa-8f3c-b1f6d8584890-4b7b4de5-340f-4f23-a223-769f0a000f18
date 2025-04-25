@@ -84,6 +84,7 @@ public class MadeInChinaBuyerModulePage {
     public void verifyURLNewUser(String urlNew){
         try {
             String url=Base.driver.getCurrentUrl();
+            System.out.println(url);
             Assert.assertTrue(url.contains(urlNew));
             test.log(Status.PASS, "URL was Verified");
             LoggerHandler.info("URL Verified");
@@ -101,6 +102,7 @@ public class MadeInChinaBuyerModulePage {
     public void verifyTitleSourceProducts(String value){
         try{
             String title = Base.driver.getTitle();
+            System.out.println(title);
             Assert.assertTrue(title.contains(value));
             test.log(Status.PASS, "Title verification successfully");
             LoggerHandler.info("Title verified successfully");
