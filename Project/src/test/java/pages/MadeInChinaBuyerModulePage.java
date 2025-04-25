@@ -1,22 +1,18 @@
 package pages;
 
-import org.testng.Assert;
+import org.junit.Assert;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
 import uistore.MadeInChinaBuyerModulePageLocator;
 import utils.Base;
-import utils.ExcelReader;
 import utils.LoggerHandler;
 import utils.Reporter;
 import utils.Screenshot;
 import utils.WebDriverHelper;
 
 public class MadeInChinaBuyerModulePage {
-     private static final String directory = "user.dir";
-    private static final String excelPath = "/testdata/BuyerExcel.xlsx/";
-    private static final String sheetName = "Samhitha";
     ExtentTest test;
     WebDriverHelper helper;
     public MadeInChinaBuyerModulePage(ExtentTest test){
@@ -85,12 +81,10 @@ public class MadeInChinaBuyerModulePage {
      * c.Description: This method is used to Verify the URL 
      * d.Return Type: void
      */
-    public void verifyURLNewUser(){
+    public void verifyURLNewUser(String urlNew){
         try {
             String url=Base.driver.getCurrentUrl();
-            System.out.println(url);
-            String NewUser=ExcelReader.readData(System.getProperty(directory)+excelPath, sheetName, 0, 0);
-            Assert.assertTrue(url.contains(NewUser));
+            Assert.assertTrue(url.contains(urlNew));
             test.log(Status.PASS, "URL was Verified");
             LoggerHandler.info("URL Verified");
         } catch (AssertionError e) {
@@ -104,10 +98,9 @@ public class MadeInChinaBuyerModulePage {
      * c.Description: This method is used to Verify Title
      * d.Return Type: void
      */
-    public void verifyTitleSourceProducts(){
+    public void verifyTitleSourceProducts(String value){
         try{
             String title = Base.driver.getTitle();
-            String value=ExcelReader.readData(System.getProperty(directory)+excelPath, sheetName, 1, 0);
             Assert.assertTrue(title.contains(value));
             test.log(Status.PASS, "Title verification successfully");
             LoggerHandler.info("Title verified successfully");
@@ -162,10 +155,9 @@ public class MadeInChinaBuyerModulePage {
      * c.Description: This method is used to verify the url which contains audited supplier
      * d.Return Type: void
      */
-    public void verifyURLSourceProducts(){
+    public void verifyURLSourceProducts(String url){
         try {
             String url2=Base.driver.getCurrentUrl();
-            String url=ExcelReader.readData(System.getProperty(directory)+excelPath, sheetName, 2, 0);
             Assert.assertTrue(url2.contains(url));
             test.log(Status.PASS, "Verified url contains Audited Suppliers");
             LoggerHandler.info("Verified url contains Audited Suppliers");
@@ -180,10 +172,9 @@ public class MadeInChinaBuyerModulePage {
      * c.Description: This method is used to Verify Title
      * d.Return Type: void
      */
-    public void verifyTitleAuditedSupplier(){
+    public void verifyTitleAuditedSupplier(String text){
         try {
             String title2=Base.driver.getTitle();
-            String text=ExcelReader.readData(System.getProperty(directory)+excelPath, sheetName, 3, 0);
             Assert.assertTrue(title2.contains(text));
             test.log(Status.PASS, "Audited Suppliers Title Verified Successfully");
             LoggerHandler.info("Audites Suppliers Title Verified Successfully");
@@ -218,10 +209,9 @@ public class MadeInChinaBuyerModulePage {
      * c.Description: This method is used to verify the url which contains private sourcing meeting
      * d.Return Type: void
      */
-    public void verifyURLPrivateSourcing(){
+    public void verifyURLPrivateSourcing(String url){
         try {
             String url3=Base.driver.getCurrentUrl();
-            String url=ExcelReader.readData(System.getProperty(directory)+excelPath, sheetName, 4, 0);
             Assert.assertTrue(url3.contains(url));
             test.log(Status.PASS, "Verified Private sourcing meeting url");
             LoggerHandler.info("Verified Private sourcing meeting url");
@@ -236,10 +226,9 @@ public class MadeInChinaBuyerModulePage {
      * c.Description: This method is used to Verify Title
      * d.Return Type: void
      */
-    public void verifyTitleMeetSuppliers(){
+    public void verifyTitleMeetSuppliers(String title){
         try {
             String title3=Base.driver.getTitle();
-            String title=ExcelReader.readData(System.getProperty(directory)+excelPath, sheetName, 5, 0);
             Assert.assertTrue(title3.contains(title));
             test.log(Status.PASS, "Meet Suppliers Verified Successfully");
             LoggerHandler.info("Meet Suppliers Verified Successfully");
