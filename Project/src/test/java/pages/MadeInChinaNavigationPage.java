@@ -1,25 +1,25 @@
 package pages;
-
+ 
 import org.junit.Assert;
 import org.openqa.selenium.By;
-
+ 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-
+ 
 import uistore.MadeInChinaCategoriesPageLocators;
 import utils.Base;
 import utils.LoggerHandler;
 import utils.WebDriverHelper;
-
+ 
 public class MadeInChinaNavigationPage {
     WebDriverHelper helper;
     ExtentTest test;
-
+ 
     public MadeInChinaNavigationPage(ExtentTest test) {
         helper = new WebDriverHelper(Base.driver);
         this.test = test;
     }
-
+ 
     /*
      * a. Method Name: clickOnCategory
      * b. Author Name: Pruthviraj Batti
@@ -39,7 +39,7 @@ public class MadeInChinaNavigationPage {
             test.log(Status.FAIL, "Failed to Click on the " + heading);
         }
     }
-
+ 
     /*
      * a. Method Name: navigateBack
      * b. Author Name: Pruthviraj Batti
@@ -57,7 +57,7 @@ public class MadeInChinaNavigationPage {
             test.log(Status.PASS, "Failed to navigated Back");
         }
     }
-
+ 
     /*
      * a. Method Name: verifyheading
      * b. Author Name: Pruthviraj Batti
@@ -76,7 +76,7 @@ public class MadeInChinaNavigationPage {
             test.log(Status.FAIL, "Failed to verified the heading " + heading);
         }
     }
-
+ 
     /*
      * a. Method Name: clickOnManufacturing
      * b. Author Name: Pruthviraj Batti
@@ -89,7 +89,7 @@ public class MadeInChinaNavigationPage {
         verifyheading(heading);
         navigateBack();
     }
-
+ 
     /*
      * a. Method Name: clickOnConsumerElectronics
      * b. Author Name: Pruthviraj Batti
@@ -102,7 +102,7 @@ public class MadeInChinaNavigationPage {
         verifyheading(heading);
         navigateBack();
     }
-
+ 
     /*
      * a. Method Name: clickOnIndustrialEquipmentComponents
      * b. Author Name: Pruthviraj Batti
@@ -115,7 +115,7 @@ public class MadeInChinaNavigationPage {
         verifyheading(heading);
         navigateBack();
     }
-
+ 
     /*
      * a. Method Name: clickOnElectricalElectronics
      * b. Author Name: Pruthviraj Batti
@@ -128,7 +128,7 @@ public class MadeInChinaNavigationPage {
         verifyheading(heading);
         navigateBack();
     }
-
+ 
     /*
      * a. Method Name: clickOnConstructionDecoration
      * b. Author Name: Pruthviraj Batti
@@ -141,7 +141,7 @@ public class MadeInChinaNavigationPage {
         verifyheading(heading);
         navigateBack();
     }
-
+ 
     /*
      * a. Method Name: clickOnLightIndustryDailyUse
      * b. Author Name: Pruthviraj Batti
@@ -154,7 +154,7 @@ public class MadeInChinaNavigationPage {
         verifyheading(heading);
         navigateBack();
     }
-
+ 
     /*
      * a. Method Name: clickOnAutoMotorcyclePartsAccessories
      * b. Author Name: Pruthviraj Batti
@@ -167,7 +167,7 @@ public class MadeInChinaNavigationPage {
         verifyheading(heading);
         navigateBack();
     }
-
+ 
     /*
      * a. Method Name: clickOnApparelAccessories
      * b. Author Name: Pruthviraj Batti
@@ -180,7 +180,7 @@ public class MadeInChinaNavigationPage {
         verifyheading(heading);
         navigateBack();
     }
-
+ 
     /*
      * a. Method Name: clickOnLightsLighting
      * b. Author Name: Pruthviraj Batti
@@ -193,7 +193,7 @@ public class MadeInChinaNavigationPage {
         verifyheading(heading);
         navigateBack();
     }
-
+ 
     /*
      * a. Method Name: clickOnSportingGoodsRecreation
      * b. Author Name: Pruthviraj Batti
@@ -207,3 +207,4 @@ public class MadeInChinaNavigationPage {
         navigateBack();
     }
 }
+ 

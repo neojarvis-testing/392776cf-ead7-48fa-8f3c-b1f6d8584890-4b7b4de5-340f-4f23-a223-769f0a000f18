@@ -1,7 +1,7 @@
 package uistore;
-
+ 
 import org.openqa.selenium.By;
-
+ 
 public class MadeInChinaCategoriesPageLocators {
     private MadeInChinaCategoriesPageLocators(){}
     public static final By popup=By.cssSelector("span[class='campaign-pop-close J-campaign-pop-close']");
@@ -16,5 +16,5 @@ public class MadeInChinaCategoriesPageLocators {
     public static final By lightsLighting=By.cssSelector("a span[data-index='9']");
     public static final By sportingGoodsRecreation=By.cssSelector("a span[data-index='10']");
     public static final By title=By.cssSelector("h1[class='cate-title']");
-
+ 
 }
