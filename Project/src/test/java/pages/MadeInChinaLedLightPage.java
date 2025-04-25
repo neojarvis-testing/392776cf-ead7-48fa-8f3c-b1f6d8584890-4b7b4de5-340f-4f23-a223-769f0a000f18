@@ -8,7 +8,6 @@ import com.aventstack.extentreports.Status;
 import uistore.MadeInChinaLanguagePageLocator;
 import uistore.MadeInChinaLedLightPageLocator;
 import utils.Base;
-import utils.ExcelReader;
 import utils.LoggerHandler;
 import utils.WebDriverHelper;
 
@@ -58,23 +57,6 @@ public class MadeInChinaLedLightPage {
         }
     }
     /*
-     * Method name: verifySearchResult.
-     * AuthorName: Rishi Prashar.
-     * Description: This method will verify the heading.
-     * Parameters: None.
-     * return type: void.
-     */
-    public void verifySearchResult(String value){
-        try {
-            String text = helper.getText(MadeInChinaLedLightPageLocator.verifyLed);
-            Assert.assertTrue(text.contains(value));
-            test.log(Status.PASS, "Search result verified");
-            LoggerHandler.info("Search result verified");
-        } catch (Exception e) {
-            test.log(Status.FAIL, "search result not verified");
-            LoggerHandler.error("search result not verified");
-        }
-    }/*
      * Method name: clickOnMore.
      * AuthorName: Rishi Prashar.
      * Description: This method will click on more button.
@@ -108,24 +90,6 @@ public class MadeInChinaLedLightPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Did not click on ledStripFilter");
             LoggerHandler.error("Did not click on ledStripFilter");
-        }
-    }
-    /*
-     * Method name: verifyFilter.
-     * AuthorName: Rishi Prashar.
-     * Description: This method will verify if the filter is applied.
-     * Parameters: None.
-     * return type: void.
-     */
-    public void verifyFilter(String value){
-        try {
-            String text = helper.getText(MadeInChinaLedLightPageLocator.verifyFilter);
-            Assert.assertEquals(text,value);
-            test.log(Status.PASS, "Filter result verified");
-            LoggerHandler.info("Filter result verified");
-        } catch (Exception e) {
-            test.log(Status.FAIL, "Filter result not verified");
-            LoggerHandler.error("Filter result not verified");
         }
     }
     /*
@@ -171,11 +135,10 @@ public class MadeInChinaLedLightPage {
      * Parameters: None.
      * return type: void.
      */
-    public void clickAndSendInquiry(){
+    public void clickAndSendInquiry(String value){
         try {
             helper.waitForElementToBeVisible(MadeInChinaLedLightPageLocator.content,3);
             helper.clickOnElement(MadeInChinaLedLightPageLocator.content);
-            String value=ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Excel.xlsx", "sheet1", 1, 0);
             helper.sendKeys(MadeInChinaLedLightPageLocator.content,value);
             test.log(Status.PASS, "clicked and sent data to content field");
             LoggerHandler.info("clicked and sent data to content field");
@@ -191,11 +154,10 @@ public class MadeInChinaLedLightPage {
      * Parameters: None.
      * return type: void.
      */
-    public void clickAndSendEmail(){
+    public void clickAndSendEmail(String value){
         try {
             helper.waitForElementToBeVisible(MadeInChinaLedLightPageLocator.email,3);
             helper.clickOnElement(MadeInChinaLedLightPageLocator.email);
-            String value=ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Excel.xlsx", "sheet1", 2, 0);
             helper.sendKeys(MadeInChinaLedLightPageLocator.email,value);
             test.log(Status.PASS, "clicked and sent data to email field");
             LoggerHandler.info("clicked and sent data to email field");

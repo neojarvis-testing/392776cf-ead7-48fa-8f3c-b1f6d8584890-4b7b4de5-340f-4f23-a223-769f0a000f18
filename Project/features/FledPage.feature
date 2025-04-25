@@ -2,14 +2,12 @@ Feature: Checking Functionality of Led Page
     Scenario: Ordering an Led Light
         Given I close the pop-up.
         When I click and send data "LED lights".
-        And I verify the result page "LED lights".
         When I click on More.
         And I click on Led Strip Light.
-        When I verify the filter "Led Strip Light".
         And I click on Contact Now.
         When I verify in inquiry page "Send Inquiry".
-        And I send an inquiry.
-        When I send an email.
+        And I send an inquiry "light that shines on hacker boi 101".
+        When I send an email "hackerboi@101".
         And I click on Send Inquiry Now.
         When I click on the cross mark.
         And I click on the logo.

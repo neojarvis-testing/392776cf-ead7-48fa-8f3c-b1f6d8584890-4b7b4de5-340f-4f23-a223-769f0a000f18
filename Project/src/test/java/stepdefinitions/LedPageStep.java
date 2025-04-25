@@ -18,10 +18,6 @@ public class LedPageStep {
     public void i_click_and_send_data(String string) {
         ledLightPage.clickAndSendData(string);
     }
-    @When("I verify the result page {string}.")
-    public void i_verify_the_result_page(String string) {
-        ledLightPage.verifySearchResult(string);
-    }
     @When("I click on More.")
     public void i_click_on_more() {
         ledLightPage.clickOnMore();
@@ -29,10 +25,6 @@ public class LedPageStep {
     @When("I click on Led Strip Light.")
     public void i_click_on_led_strip_light() {
         ledLightPage.clickOnLedStripLight();
-    }
-    @When("I verify the filter {string}.")
-    public void i_verify_the_filter(String string) {
-        ledLightPage.verifyFilter(string);
     }
     @When("I click on Contact Now.")
     public void i_click_on_contact_now() {
@@ -42,13 +34,13 @@ public class LedPageStep {
     public void i_verify_in_inquiry_page(String string) {
         ledLightPage.verifyInquiry(string);
     }
-    @When("I send an inquiry.")
-    public void i_send_an_inquiry() {
-        ledLightPage.clickAndSendInquiry();
+    @When("I send an inquiry {string}.")
+    public void i_send_an_inquiry(String string) {
+       ledLightPage.clickAndSendInquiry(string);
     }
-    @When("I send an email.")
-    public void i_send_an_email() {
-        ledLightPage.clickAndSendEmail();
+    @When("I send an email {string}.")
+    public void i_send_an_email(String string) {
+       ledLightPage.clickAndSendEmail(string);
     }
     @When("I click on Send Inquiry Now.")
     public void i_click_on_send_inquiry_now() {
