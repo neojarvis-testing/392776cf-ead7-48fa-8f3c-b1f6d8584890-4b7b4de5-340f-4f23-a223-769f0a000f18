@@ -1,6 +1,6 @@
 package pages;
 
-import org.testng.Assert;
+import org.junit.Assert;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
@@ -110,8 +110,7 @@ public class MadeInChinaWiresAndFurniturePage {
     public void veirfyTextContainsWire(){
         try {
             String text = helper.getText(MadeInChinaWiresAndFurnitureLocatores.firstProduct);
-            String data=ExcelReader.readData(System.getProperty(directory)+excelPath, sheetName, 0, 0);
-            Assert.assertTrue(text.contains(text));
+            Assert.assertTrue(text.contains("Wire"));
             test.log(Status.PASS, "Text Verified");
             LoggerHandler.info("Text Verified");
         } catch (Exception e) {
@@ -151,8 +150,7 @@ public class MadeInChinaWiresAndFurniturePage {
         try {
             String contactText = helper.getText(MadeInChinaWiresAndFurnitureLocatores.firstProduct);
             System.out.println(contactText);
-            String data=ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Shashank.xlsx", "Sheet1", 1, 0);
-            Assert.assertTrue(contactText.contains(contactText));
+            org.junit.Assert.assertTrue(contactText.contains(contactText));
             test.log(Status.PASS, "Text Verified");
             LoggerHandler.info("Text is Verified");
         } catch (Exception e) {
@@ -190,8 +188,7 @@ public class MadeInChinaWiresAndFurniturePage {
     public void veirfyTextContainsFurniture(){
         try {
             String text = helper.getText(MadeInChinaWiresAndFurnitureLocatores.firstProduct);
-            String data=ExcelReader.readData(System.getProperty(directory)+excelPath, sheetName, 2, 0);
-            Assert.assertTrue(text.contains(text));
+            Assert.assertTrue(text.contains("Furniture"));
             test.log(Status.PASS, "Text Verified");
             LoggerHandler.info("Text Verified");
         } catch (Exception e) {
@@ -228,7 +225,6 @@ public class MadeInChinaWiresAndFurniturePage {
     public void verifyHomePage(){
         try {
             String title = Base.driver.getTitle();
-            String text=ExcelReader.readData(System.getProperty(directory)+excelPath, sheetName, 3, 0);
             Assert.assertTrue(title.contains(title));
             test.log(Status.PASS, "Title Verified");
             LoggerHandler.info("Title Verified");
@@ -238,30 +234,7 @@ public class MadeInChinaWiresAndFurniturePage {
         }  
     }
 
-    /*
-     * a.Method Name: WiresAndFurnitureTestCase
-     * b.Author Name: Shashank Kondur
-     * c.Description: Method to run all the methods with in the page.
-     * d.Return Type: void
-     * e.Paramenter List: none
-     */
-    public void wiresAndFurnitureTestCase(){
-        clickOnXmark();
-        clickOnSearchBar();
-        sendDataToSearchBar("Wires");
-        enterDataToSearchBar();
-        veirfyTextContainsWire();
-        clickOnFirstProductWire();
-        clickOnLogo();
-        clickOnSearchBar();
-        sendDataToSearchBar("Furniture");
-        enterDataToSearchBar();
-        veirfyTextContainsFurniture();
-        clikOnPagination2Page();
-        clickOnLogo();
-        verifyHomePage();
-
-    }
+    
 
 
 

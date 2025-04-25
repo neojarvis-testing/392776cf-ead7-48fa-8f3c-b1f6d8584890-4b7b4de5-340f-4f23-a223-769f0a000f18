@@ -60,7 +60,7 @@ public class Hooks extends Base {
      * e.Paramenter List:none
      */
 	@AfterAll
-	public void finalizeReport() {
+	public static void finalizeReport() {
 		report.flush();
         Reporter.sendEmailWithReport(reportFilePath);
     }

@@ -1,6 +1,6 @@
 package pages;
 
-import org.testng.Assert;
+import org.junit.Assert;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
@@ -68,10 +68,10 @@ public class MadeInChinaSpicesPageContact {
      * d.Return Type: void
      * e.Paramenter List: none
      */
-    public void sendDataToSearchBar(){
+    public void sendDataToSearchBar(String value){
         try {
             helper.waitForElementToBeVisible(MadeInChinaSpicesPageContactLocators.searchBar, 10);
-            helper.sendKeys(MadeInChinaSpicesPageContactLocators.searchBar, "spices");
+            helper.sendKeys(MadeInChinaSpicesPageContactLocators.searchBar, value);
             test.log(Status.PASS, "Sent data to the search bar");
             LoggerHandler.info("Data sent to the search bar");
         } catch (Exception e) {
@@ -186,10 +186,10 @@ public class MadeInChinaSpicesPageContact {
      * d.Return Type: void
      * e.Paramenter List: none
      */
-    public void sendDataToTextArea(){
+    public void sendDataToTextArea(String value){
         try {
             helper.waitForElementToBeVisible(MadeInChinaSpicesPageContactLocators.textArea, 10);
-            helper.sendKeys(MadeInChinaSpicesPageContactLocators.textArea, "I want to know more details about the item. ");
+            helper.sendKeys(MadeInChinaSpicesPageContactLocators.textArea, value);
             test.log(Status.PASS, "Data has sent to the textArea");
             LoggerHandler.info("Data sent to the textArea");
         } catch (Exception e) {
@@ -224,10 +224,10 @@ public class MadeInChinaSpicesPageContact {
      * d.Return Type: void
      * e.Paramenter List: none
      */
-    public void sendDataToEmailInput(){
+    public void sendDataToEmailInput(String value){
         try {
             helper.waitForElementToBeVisible(MadeInChinaSpicesPageContactLocators.emailInput, 10);
-            helper.sendKeys(MadeInChinaSpicesPageContactLocators.emailInput, "testmic@gmail.com");
+            helper.sendKeys(MadeInChinaSpicesPageContactLocators.emailInput, value);
             test.log(Status.PASS, "Data sent to the emailInput");
             LoggerHandler.info("Data has sent to the emailInput");
         } catch (Exception e) {
@@ -277,7 +277,7 @@ public class MadeInChinaSpicesPageContact {
     public void verifyTextSuccessfullySended(){
         try {
             String text = helper.getText(MadeInChinaSpicesPageContactLocators.sentSuccessfully);
-            Assert.assertEquals(ExcelReader.readData(System.getProperty("user.dir")+"/testdata/Shashank.xlsx", text, 4, 0), text);
+            Assert.assertEquals("Sent Successfully", text);
             test.log(Status.PASS, "Text Verified");
             LoggerHandler.info("Text Verified");
         } catch (Exception e) {
@@ -364,26 +364,7 @@ public class MadeInChinaSpicesPageContact {
         }
     }
     
-    /*
-     * a.Method Name: SpicesPageContactTestCase
-     * b.Author Name: Shashank Kondur
-     * c.Description: Method to run all the methods with in the page.
-     * d.Return Type: void
-     * e.Paramenter List: none
-     */
-    public void spicesPageContactTestCase(){
-        clickOnXmark();
-        clickOnSearchBar();
-        sendDataToSearchBar();
-        enterDataToSearchBar();
-        clickOnContactNow();
-        clickOnTextArea();
-        sendDataToTextArea();
-        clickOnEmailInput();
-        sendDataToEmailInput();
-        clickOnSendInquireNow();
-        clikOnPopupXMark();
-    }
+    
 
 
 
