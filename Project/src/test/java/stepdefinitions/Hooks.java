@@ -12,7 +12,7 @@ import utils.Base;
 import utils.Reporter;
 
 public class Hooks extends Base {
- static ExtentReports report;
+static ExtentReports report;
      ExtentTest test;
      static String reportFilePath;
          /*
