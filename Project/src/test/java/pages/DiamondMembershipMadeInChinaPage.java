@@ -1,18 +1,14 @@
 package pages;
 
-import org.testng.Assert;
+import org.junit.Assert;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import uistore.MadeInChinaDiamondMembershipPageLocator;
 import utils.Base;
-import utils.ExcelReader;
 import utils.LoggerHandler;
 import utils.WebDriverHelper;
 
 public class DiamondMembershipMadeInChinaPage {
-    private static final String directory = "user.dir";
-    private static final String excelPath = "/testdata/krishna.xlsx/";
-    private static final String sheetName = "Krishna";
     WebDriverHelper helper;
     ExtentTest test;
     /*
