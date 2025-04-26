@@ -286,7 +286,8 @@ public class MadeInChinaLanguagePage {
             Screenshot.captureFullScreenshot("Russian");
             test.log(Status.PASS, "changed to Russian");
             LoggerHandler.info("changed to Russian");
-        } catch (Exception e) Screenshot.captureFullErrorScreenshot("Not changed to Russian");
+        } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not changed to Russian");
             test.log(Status.FAIL, "Not changed to Russian");
             LoggerHandler.error("Not changed to Russian");
         }
@@ -306,6 +307,7 @@ public class MadeInChinaLanguagePage {
             test.log(Status.PASS, "clicked on Japanese");
             LoggerHandler.info("clicked on Japanese");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Did not click on Japanese");
             test.log(Status.FAIL, "Did not click on Japanese");
             LoggerHandler.error("Did not click on Japanese");
         }
@@ -325,6 +327,7 @@ public class MadeInChinaLanguagePage {
             test.log(Status.PASS, "changed to Japanese");
             LoggerHandler.info("changed to Japanese");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not changed to Japanese");
             test.log(Status.FAIL, "Not changed to Japanese");
             LoggerHandler.error("Not changed to Japanese");
         }
@@ -344,6 +347,7 @@ public class MadeInChinaLanguagePage {
             test.log(Status.PASS, "clicked on English");
             LoggerHandler.info("clicked on English");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Did not click on English");
             test.log(Status.FAIL, "Did not click on English");
             LoggerHandler.error("Did not click on English");
         }
@@ -363,6 +367,7 @@ public class MadeInChinaLanguagePage {
             test.log(Status.PASS, "changed to English");
             LoggerHandler.info("changed to English");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not changed to English");
             test.log(Status.FAIL, "Not changed to English");
             LoggerHandler.error("Not changed to English");
         }

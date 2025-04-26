@@ -37,6 +37,7 @@ public class MadeInChinaSpicesPageContact {
             test.log(Status.PASS, "Clicked on the xmark");
             LoggerHandler.info("Clicked on the xmark");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not clicked on the xmark");
             test.log(Status.FAIL, "Not clicked on the xmark");
             LoggerHandler.info("Not clicked on the xmark");
         }
@@ -56,6 +57,7 @@ public class MadeInChinaSpicesPageContact {
             test.log(Status.PASS, "Clicked on the search bar");
             LoggerHandler.info("Clicked on the search bar");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not clicked on the search ba");
             test.log(Status.FAIL, "Not clicked on the search bar");
             LoggerHandler.info("Not clicked on the search bar");
         }
@@ -75,6 +77,7 @@ public class MadeInChinaSpicesPageContact {
             test.log(Status.PASS, "Sent data to the search bar");
             LoggerHandler.info("Data sent to the search bar");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Did not sent data to the search bar");
             test.log(Status.FAIL, "Did not sent data to the search bar");
             LoggerHandler.info("Data not sent to the search bar");
         }
@@ -94,6 +97,7 @@ public class MadeInChinaSpicesPageContact {
             test.log(Status.PASS, "Enter action performed");
             LoggerHandler.info("Enter action performed");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Enter action not performed");
             test.log(Status.FAIL, "Enter action not performed");
             LoggerHandler.info("Data not sent to the search bar");
         }
@@ -114,6 +118,7 @@ public class MadeInChinaSpicesPageContact {
             test.log(Status.PASS, "Clicked on the first contactNow");
             LoggerHandler.info("Clicked on the first contactNow");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not clicked on the first contactNow");
             test.log(Status.FAIL, "Not clicked on the first contactNow");
             LoggerHandler.info("Not clicked on the first contactNow");
         }
@@ -134,6 +139,7 @@ public class MadeInChinaSpicesPageContact {
             test.log(Status.PASS, "Clicked on the first product");
             LoggerHandler.info("Clicked on the first product");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not clicked on the first product");
             test.log(Status.FAIL, "Not clicked on the first product");
             LoggerHandler.info("Not clicked on the first product");
         }
@@ -154,6 +160,7 @@ public class MadeInChinaSpicesPageContact {
             test.log(Status.PASS, "Clicked on the contactSupplier");
             LoggerHandler.info("Clicked on the contactSupplier");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not clicked on the contactSupplier");
             test.log(Status.FAIL, "Not clicked on the contactSupplier");
             LoggerHandler.info("Not clicked on the contactSupplier");
         }
@@ -174,6 +181,7 @@ public class MadeInChinaSpicesPageContact {
             test.log(Status.PASS, "Clicked on the textArea");
             LoggerHandler.info("Clicked on the textArea");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not clicked on the textArea");
             test.log(Status.FAIL, "Not clicked on the textArea");
             LoggerHandler.info("Not clicked on the textArea");
         }
@@ -193,6 +201,7 @@ public class MadeInChinaSpicesPageContact {
             test.log(Status.PASS, "Data has sent to the textArea");
             LoggerHandler.info("Data sent to the textArea");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Data did not sent to the textArea");
             test.log(Status.FAIL, "Data did not sent to the textArea");
             LoggerHandler.info("Data not sent to the textArea");
         }
@@ -212,6 +221,7 @@ public class MadeInChinaSpicesPageContact {
             test.log(Status.PASS, "Clicked on the emailInput");
             LoggerHandler.info("Clicked on the emailInput");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not clicked on the emailInput");
             test.log(Status.FAIL, "Not clicked on the emailInput");
             LoggerHandler.info("Not clicked on the emailInput");
         }
@@ -231,6 +241,7 @@ public class MadeInChinaSpicesPageContact {
             test.log(Status.PASS, "Data sent to the emailInput");
             LoggerHandler.info("Data has sent to the emailInput");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Data not sent to the emailInput");
             test.log(Status.FAIL, "Data not sent to the emailInput");
             LoggerHandler.info("Data did not sent to the emailInput");
         }
@@ -250,6 +261,7 @@ public class MadeInChinaSpicesPageContact {
             test.log(Status.PASS, "Clicked on the sendInquryNow");
             LoggerHandler.info("Clicked on the sendInquryNow");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not clicked on the sendInquryNow");
             test.log(Status.FAIL, "Not clicked on the sendInquryNow");
             LoggerHandler.info("Not clicked on the sendInquryNow");
         }
@@ -262,6 +274,7 @@ public class MadeInChinaSpicesPageContact {
             test.log(Status.PASS, "Clicked on the removePopup");
             LoggerHandler.info("Clicked on the removePopup");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not clicked on the removePopup");
             test.log(Status.FAIL, "Not clicked on the removePopup");
             LoggerHandler.info("Not clicked on the removePopup");
         }
@@ -281,6 +294,7 @@ public class MadeInChinaSpicesPageContact {
             test.log(Status.PASS, "Text Verified");
             LoggerHandler.info("Text Verified");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Text Not Verified");
             test.log(Status.PASS, "Text Not Verified");
             LoggerHandler.info("Text Not Verified");
         }
@@ -300,6 +314,7 @@ public class MadeInChinaSpicesPageContact {
             test.log(Status.PASS, "Clicked on the accountPassword");
             LoggerHandler.info("Clicked on the accountPassword");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not clicked on the accountPassword");
             test.log(Status.FAIL, "Not clicked on the accountPassword");
             LoggerHandler.info("Not clicked on the accountPassword");
         }
@@ -319,6 +334,7 @@ public class MadeInChinaSpicesPageContact {
             test.log(Status.PASS, "Data sent to the accountPassword");
             LoggerHandler.info("Data sent to the emailInput");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Data not sent to the accountPassword");
             test.log(Status.FAIL, "Data not sent to the accountPassword");
             LoggerHandler.info("Data not sent to the accountPassword");
         }
@@ -338,6 +354,7 @@ public class MadeInChinaSpicesPageContact {
             test.log(Status.PASS, "Clicked on the checkBox");
             LoggerHandler.info("Clicked on the checkBox");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not clicked on the checkBox");
             test.log(Status.FAIL, "Not clicked on the checkBox");
             LoggerHandler.info("Not clicked on the checkBox");
         }
@@ -359,6 +376,7 @@ public class MadeInChinaSpicesPageContact {
             test.log(Status.PASS, "Clicked on the verifyEmail");
             LoggerHandler.info("Clicked on the verifyEmail");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not clicked on the verifyEmail");
             test.log(Status.FAIL, "Not clicked on the verifyEmail");
             LoggerHandler.info("Not clicked on the verifyEmail");
         }

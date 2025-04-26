@@ -9,6 +9,7 @@ import com.aventstack.extentreports.Status;
 import uistore.MadeInChinaCategoriesPageLocators;
 import utils.Base;
 import utils.LoggerHandler;
+import utils.Screenshot;
 import utils.WebDriverHelper;
  
 public class MadeInChinaNavigationPage {
@@ -35,6 +36,7 @@ public class MadeInChinaNavigationPage {
             LoggerHandler.info("Successfully Clicked on the " + heading);
             test.log(Status.PASS, "Successfully Clicked on the " + heading);
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Failed to Click on the " + heading);
             LoggerHandler.error("Failed to Click on the " + heading);
             test.log(Status.FAIL, "Failed to Click on the " + heading);
         }
@@ -53,6 +55,7 @@ public class MadeInChinaNavigationPage {
             LoggerHandler.info("Successfully navigated Back");
             test.log(Status.PASS, "Successfully navigated Back");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Failed to navigated Back");
             LoggerHandler.info("Failed to navigated Back");
             test.log(Status.PASS, "Failed to navigated Back");
         }
@@ -72,6 +75,7 @@ public class MadeInChinaNavigationPage {
             LoggerHandler.info("Successfully verified the heading " + heading);
             test.log(Status.PASS, "Successfully verified the heading " + heading);
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Failed to verified the heading " + heading);
             LoggerHandler.info("Failed to verified the heading " + heading);
             test.log(Status.FAIL, "Failed to verified the heading " + heading);
         }
