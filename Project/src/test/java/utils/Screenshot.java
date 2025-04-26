@@ -13,6 +13,7 @@ public class Screenshot extends Base {
     private static final String time = "yyyy.MM.dd.HH.mm.ss";
     private static final String directory = "user.dir";
     private static final String screenshotDirectory = "/screenshots";
+    private static final String errorScreenshot="/errorScreenshots";
     /*
    * MethodName: captureFullScreenshot
    * AuthorName: SaiRohith
@@ -36,6 +37,29 @@ public class Screenshot extends Base {
             LoggerHandler.error("captureFullScreenshot not working");
         }
     }
+    /*
+   * MethodName: captureFullErrorScreenshot
+   * AuthorName: SaiRohith
+   * Description: This method is used to capture full screenshot of the page when called
+   * Parameters: String filename
+   * ReturnType: void
+   */
+  public static void captureFullErrorScreenshot(String filename) {
+    String timestamp = new SimpleDateFormat(time).format(new Date());
+    String name = filename + timestamp + ".png";
+    TakesScreenshot ts = (TakesScreenshot) driver;
+    File file = ts.getScreenshotAs(OutputType.FILE);
+    File screenshotsDir = new File(System.getProperty(directory) + errorScreenshot);
+    if (!screenshotsDir.exists()) {
+        screenshotsDir.mkdirs();
+    }
+    File target = new File(screenshotsDir, name);
+    try {
+        Files.copy(file, target);
+    } catch (IOException e) {
+        LoggerHandler.error("captureFullScreenshot not working");
+    }
+}
      /*
    * MethodName: captureHighlightedElementScreenshot
    * AuthorName: SaiRohith

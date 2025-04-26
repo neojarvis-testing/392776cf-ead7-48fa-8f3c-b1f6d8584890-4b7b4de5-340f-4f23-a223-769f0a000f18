@@ -8,6 +8,7 @@ import uistore.MadeInChinaSignInPageLocator;
 import utils.WebDriverHelper;
 import utils.Base;
 import utils.LoggerHandler;
+import utils.Screenshot;
 public class MadeInChinaSignInPage {
     ExtentTest test;
     WebDriverHelper helper;
@@ -31,6 +32,7 @@ public class MadeInChinaSignInPage {
             test.log(Status.PASS,"scuuessfully verified Sign text");
             LoggerHandler.info("scuuessfully verified Sign text");           
         } catch (AssertionError e) {
+             Screenshot.captureFullErrorScreenshot("SignIn verification failed");
             test.log(Status.FAIL,"SignIn verification failed");
             LoggerHandler.error("SignIn verification failed");
        }
@@ -49,6 +51,7 @@ public class MadeInChinaSignInPage {
             test.log(Status.PASS,"Hovering SignIn success");
             LoggerHandler.info("Hovering SignIn success");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Hovering SignIn failed");
             test.log(Status.FAIL,"Hovering SignIn failed");
             LoggerHandler.error("Hovering SignIn failed");
         }
@@ -68,6 +71,7 @@ public class MadeInChinaSignInPage {
             test.log(Status.PASS,"Clicking on SignIn success");
             LoggerHandler.info("Clicking SignIn is success");            
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("SignIn failed");
             test.log(Status.FAIL,"Clicking Signin failed");
             LoggerHandler.error("Clicking Sign In failed");
          }
@@ -86,6 +90,7 @@ public class MadeInChinaSignInPage {
             test.log(Status.PASS,"Clicking on email success");
             LoggerHandler.info("Clicking email is success");            
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Clicking email has failed");
             test.log(Status.FAIL,"Clicking email has failed");
             LoggerHandler.error("Clicking on email failed");
         }
@@ -103,6 +108,7 @@ public class MadeInChinaSignInPage {
             test.log(Status.PASS,"entering data to email success");
             LoggerHandler.info("entering data to email success");            
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("entering data to email failed");
             test.log(Status.FAIL,"entering data to email failed");
             LoggerHandler.error("entering data to email failed");
         }
@@ -122,6 +128,7 @@ public class MadeInChinaSignInPage {
             test.log(Status.PASS,"Clicking I agree to checkbox success");
             LoggerHandler.info("Clicking I agree to checkbox success");           
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Clicking I agree to checkbox faile");
             test.log(Status.FAIL,"Clicking I agree to checkbox failed");
             LoggerHandler.error("Clicking I agree to checkbox failed");
         }
@@ -141,6 +148,7 @@ public class MadeInChinaSignInPage {
             test.log(Status.PASS,"Clicking verify box success");
             LoggerHandler.info("Clicking verify box success");           
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Clicking verify box  failed");
             test.log(Status.FAIL,"Clicking verify box  failed");
             LoggerHandler.error("Clicking verify box  failed");
         }
@@ -158,6 +166,7 @@ public class MadeInChinaSignInPage {
             test.log(Status.PASS,"Clicking next box success");
             LoggerHandler.info("Clicking next box success");           
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Clicking next box  failed");
             test.log(Status.FAIL,"Clicking next box  failed");
             LoggerHandler.error("Clicking next box  failed");
         }
@@ -176,6 +185,7 @@ public class MadeInChinaSignInPage {
             test.log(Status.PASS,"scuuessfully verified text");
             LoggerHandler.info("successfully verified text");            
         } catch (AssertionError e) {
+            Screenshot.captureFullErrorScreenshot("failed to verify text");
             test.log(Status.FAIL,"failed to verify text");
             LoggerHandler.error("text verification is failed");
         }
@@ -195,6 +205,7 @@ public class MadeInChinaSignInPage {
             test.log(Status.PASS,"Clicking sign in success");
             LoggerHandler.info("Clicking sign in is success");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("SignIn failed");
             test.log(Status.FAIL,"Clicking sign in  failed");
             LoggerHandler.error("Clicking sign in has failed");
         }
@@ -213,6 +224,7 @@ public class MadeInChinaSignInPage {
             test.log(Status.PASS,"entering data in email success");
             LoggerHandler.info("entering data in email success");     
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("entering data in email  failed");
             test.log(Status.FAIL,"entering data in email  failed");
             LoggerHandler.error("entering data in email  failed");
         }
@@ -231,6 +243,7 @@ public class MadeInChinaSignInPage {
             test.log(Status.PASS,"entering data in password success");
             LoggerHandler.info("entering data in password success");                
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("entering data in password fail");
             test.log(Status.FAIL,"entering data in password fail");
             LoggerHandler.error("entering data in password fail");
         }
@@ -248,6 +261,7 @@ public class MadeInChinaSignInPage {
             test.log(Status.PASS,"Clicked on sign in success");
             LoggerHandler.info("Clicked sign in success");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Clicking sign in  failed");
             test.log(Status.FAIL,"Clicking sign in  failed");
             LoggerHandler.error("Clicking sign in failed");
                 }
@@ -266,6 +280,7 @@ public class MadeInChinaSignInPage {
             test.log(Status.PASS,"sucuessfully verified text");
             LoggerHandler.info("sucessfully verified  text");           
         } catch (AssertionError e) {
+            Screenshot.captureFullErrorScreenshot("text is not verified");
             test.log(Status.FAIL,"text is not verified");
             LoggerHandler.error("text did not verified");
         }
@@ -283,6 +298,7 @@ public class MadeInChinaSignInPage {
             test.log(Status.PASS,"Clicking forget password in success");
             LoggerHandler.info("Clicking forget password success");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Clicking forget pasword in  failed");
             test.log(Status.FAIL,"Clicking forget pasword in  failed");
             LoggerHandler.error("Clicking forget password failed");
         }
@@ -300,6 +316,7 @@ public class MadeInChinaSignInPage {
             test.log(Status.PASS,"Clicking continu in success");
             LoggerHandler.info("Clicking continue success");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Clicking continue  failed");
             test.log(Status.FAIL,"Clicking continue  failed");
             LoggerHandler.error("Clicking continue failed");
                 }
@@ -318,6 +335,7 @@ public class MadeInChinaSignInPage {
             test.log(Status.PASS,"scuessfully verified text");
             LoggerHandler.info("scuuessfully verified  text");           
         } catch (AssertionError e) {
+            Screenshot.captureFullErrorScreenshot("text verification failed");
             test.log(Status.FAIL,"text verification failed");
             LoggerHandler.error("text verification has failed");
         }

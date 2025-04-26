@@ -10,4 +10,6 @@ Feature: Category Functionality
         When I click on popup and click on Apparel & Accessories   and verify heading "Apparel & Accessories" and navigate Back
         When I click on popup and click on Lights & Lighting   and verify heading "Lights & Lighting" and navigate Back
         When I click on popup and click on Sporting Goods & Recreation   and verify heading "Sporting Goods & Recreation" and navigate Back
- 
+
+
+

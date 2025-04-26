@@ -41,6 +41,7 @@ public class MadeInChinaProductDirectoryPage {
             LoggerHandler.info("Successfully clicked on popup");
             test.log(Status.PASS, "Successfully clicked on popup");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Failed to click on popup");
             LoggerHandler.error("Failed to click on popup");
             test.log(Status.FAIL, "Failed to click on popup");
         }
@@ -58,6 +59,7 @@ public class MadeInChinaProductDirectoryPage {
             LoggerHandler.info("Successfully  hovered over the Buyer");
             test.log(Status.PASS, "Successfully  hovered over the Buyer");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Failed to hovered over the Buyer");
             LoggerHandler.error("Failed to hovered over the Buyer");
             test.log(Status.FAIL, "Failed to hovered over the Buyer");
         }
@@ -77,6 +79,7 @@ public class MadeInChinaProductDirectoryPage {
             LoggerHandler.info("Successfully clicked on Product Directory");
             test.log(Status.PASS, "Successfully clicked on Product Directory");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Failed  to click on Product Directory");
             LoggerHandler.error("Failed  to click on Product Directory");
             test.log(Status.FAIL, "Failed  to click on Product Directory");
         }
@@ -100,6 +103,7 @@ public class MadeInChinaProductDirectoryPage {
             test.log(Status.PASS, "Successfully clicked on Machine Tools");
             Reporter.attachScreenshotToReport("Machine Tools", test, "Machine Tools");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Failed to click on Machine Tools");
             LoggerHandler.error("Failed to click on Machine Tools");
             test.log(Status.FAIL, "Failed to click on Machine Tools");
         }
@@ -123,6 +127,7 @@ public class MadeInChinaProductDirectoryPage {
             test.log(Status.PASS, "Successfully clicked on Engineering & Construction Machinery");
             Reporter.attachScreenshotToReport("Construction Machinery ", test, "Construction Machinery");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Failed to click on Engineering & Construction Machinery");
             LoggerHandler.error("Failed to click on Engineering & Construction Machinery");
             test.log(Status.FAIL, "Failed to click on Engineering & Construction Machinery");
         }
@@ -145,6 +150,7 @@ public class MadeInChinaProductDirectoryPage {
             LoggerHandler.info("Successfully clicked on Woodworking Machinery");
             test.log(Status.PASS, "Successfully clicked on Woodworking Machinery");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Failed to click on Woodworking Machinery");
             LoggerHandler.error("Failed to click on Woodworking Machinery");
             test.log(Status.FAIL, "Failed to click on Woodworking Machinery");
         }
@@ -167,6 +173,7 @@ public class MadeInChinaProductDirectoryPage {
             LoggerHandler.info("Successfully clicked on Plastic Machinery");
             test.log(Status.PASS, "Successfully clicked on the Plastic Machinery");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Failed to click on Plastic Machinery");
             LoggerHandler.error("Didn't Successfully clicked on Plastic Machinery");
             test.log(Status.FAIL, "Not Successfully clicked on Plastic Machinery");
         }
@@ -189,6 +196,7 @@ public class MadeInChinaProductDirectoryPage {
             LoggerHandler.info("Successfully clicked on Metallic Processing Machinery");
             test.log(Status.PASS, "Successfully clicked on the Metallic Processing Machinery");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Failed to click on Metallic Processing Machinery");
             LoggerHandler.error("Not Successfully clicked on Metallic Processing Machinery");
             test.log(Status.FAIL, "Didn't Successfully clicked on Metallic Processing Machinery");
         }
@@ -211,6 +219,7 @@ public class MadeInChinaProductDirectoryPage {
             LoggerHandler.info("Successfully clicked on Mould");
             test.log(Status.PASS, "Successfully clicked the on Mould");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Failed to click on Mould");
             LoggerHandler.error("Didn't Successfully clicked on Mould");
             test.log(Status.FAIL, "Not Successfully clicked on Mould");
         }
@@ -233,6 +242,7 @@ public class MadeInChinaProductDirectoryPage {
             LoggerHandler.info("Successfully clicked on the Laser Equipment");
             test.log(Status.PASS, "Successfully clicked on Laser Equipment");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Failed to click on Laser Equipment");
             LoggerHandler.error("Didn't Successfully clicked on Laser Equipment");
             test.log(Status.FAIL, "Not Successfully clicked on Laser Equipment");
         }
@@ -257,6 +267,7 @@ public class MadeInChinaProductDirectoryPage {
             LoggerHandler.info("Successfully clicked on Casting & Forging");
             test.log(Status.PASS, "Successfully clicked on the Casting & Forging");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Failed to click on Casting & Forging");
             LoggerHandler.error("Did not Successfully clicked on Casting & Forging");
             test.log(Status.FAIL, "Not Successfully clicked on Casting & Forging");
         }
@@ -283,6 +294,7 @@ public class MadeInChinaProductDirectoryPage {
             Screenshot.captureFullScreenshot("agricultural_machinery");
            
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Failed to click on Agricultural Machinery");
             LoggerHandler.error("Not Successfully clicked on Agricultural Machinery");
             test.log(Status.FAIL, "Didn't Successfully clicked on Agricultural Machinery");
         }
@@ -303,6 +315,7 @@ public class MadeInChinaProductDirectoryPage {
             LoggerHandler.info("Successfully navigated Back");
             test.log(Status.PASS,"Successfully navigate back");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Failed to navigate Back");
             LoggerHandler.info("Failed to navigate Back");
             test.log(Status.PASS,"Not navigated back");
         }
@@ -322,6 +335,7 @@ public class MadeInChinaProductDirectoryPage {
             LoggerHandler.info("Successfully verified url "+url);
             test.log(Status.PASS,"Successfully verified the url  "+url );
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Failed to verified the url  "+url);
             LoggerHandler.info("Failed to verified the url  "+url );
             test.log(Status.FAIL,"Didn't verified the url  "+url );
         }  

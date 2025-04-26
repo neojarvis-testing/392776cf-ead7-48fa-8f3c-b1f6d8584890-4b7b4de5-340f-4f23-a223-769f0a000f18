@@ -9,6 +9,7 @@ import uistore.MadeInChinaLanguagePageLocator;
 import uistore.MadeInChinaLedLightPageLocator;
 import utils.Base;
 import utils.LoggerHandler;
+import utils.Screenshot;
 import utils.WebDriverHelper;
 
 public class MadeInChinaLedLightPage {
@@ -31,7 +32,7 @@ public class MadeInChinaLedLightPage {
             helper.clickOnElement(MadeInChinaLanguagePageLocator.popup);
             test.log(Status.PASS, "closed pop up");
             LoggerHandler.info("closed pop up");
-        } catch (Exception e) {
+        } catch (Exception e) {Screenshot.captureFullErrorScreenshot("Did not close pop up");
             test.log(Status.FAIL, "Did not close pop up");
             LoggerHandler.error("Did not close pop up");
         }
@@ -52,6 +53,7 @@ public class MadeInChinaLedLightPage {
             test.log(Status.PASS, "clicked and sent data to search bar");
             LoggerHandler.info("clicked and sent data to search bar");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Did not click and sent data to search bar");
             test.log(Status.FAIL, "Did not click and sent data to search bar");
             LoggerHandler.error("Did not click and sent data to search bar");
         }
@@ -70,6 +72,7 @@ public class MadeInChinaLedLightPage {
             test.log(Status.PASS, "clicked on more");
             LoggerHandler.info("clicked on more");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Did not click on more");
             test.log(Status.FAIL, "Did not click on more");
             LoggerHandler.error("Did not click on more");
         }
@@ -88,6 +91,7 @@ public class MadeInChinaLedLightPage {
             test.log(Status.PASS, "clicked on ledStripFilter");
             LoggerHandler.info("clicked on ledStripFilter");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Did not click on ledStripFiltere");
             test.log(Status.FAIL, "Did not click on ledStripFilter");
             LoggerHandler.error("Did not click on ledStripFilter");
         }
@@ -106,6 +110,7 @@ public class MadeInChinaLedLightPage {
             test.log(Status.PASS, "clicked on contact Now");
             LoggerHandler.info("clicked on contact Now");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Did not click on contact Now");
             test.log(Status.FAIL, "Did not click on contact Now");
             LoggerHandler.error("Did not click on contact Now");
         }
@@ -124,6 +129,7 @@ public class MadeInChinaLedLightPage {
             test.log(Status.PASS, "Inquiry page is verified");
             LoggerHandler.info("Inquiry page is verified");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Inquiry page is not verified");
             test.log(Status.FAIL, "Inquiry page is not verified");
             LoggerHandler.error("Inquiry page is not verified");
         }
@@ -143,6 +149,7 @@ public class MadeInChinaLedLightPage {
             test.log(Status.PASS, "clicked and sent data to content field");
             LoggerHandler.info("clicked and sent data to content field");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Did not click and sent data to content field");
             test.log(Status.FAIL, "Did not click and sent data to content field");
             LoggerHandler.error("Did not click and sent data to content field");
         }
@@ -162,6 +169,7 @@ public class MadeInChinaLedLightPage {
             test.log(Status.PASS, "clicked and sent data to email field");
             LoggerHandler.info("clicked and sent data to email field");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Did not click and sent data to email field");
             test.log(Status.FAIL, "Did not click and sent data to email field");
             LoggerHandler.error("Did not click and sent data to email field");
         }
@@ -180,6 +188,7 @@ public class MadeInChinaLedLightPage {
             test.log(Status.PASS, "clicked on sendEnquiry");
             LoggerHandler.info("clicked on sendEnquiry");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Did not click on sendEnquiry");
             test.log(Status.FAIL, "Did not click on sendEnquiry");
             LoggerHandler.error("Did not click on sendEnquiry");
         }
@@ -198,6 +207,7 @@ public class MadeInChinaLedLightPage {
             test.log(Status.PASS, "clicked on crossMark");
             LoggerHandler.info("clicked on crossMark");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Did not click on crossMark");
             test.log(Status.FAIL, "Did not click on crossMark");
             LoggerHandler.error("Did not click on crossMark");
         }
@@ -216,6 +226,7 @@ public class MadeInChinaLedLightPage {
             test.log(Status.PASS, "clicked on logo");
             LoggerHandler.info("clicked on logo");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Did not click on logo");
             test.log(Status.FAIL, "Did not click on logo");
             LoggerHandler.error("Did not click on logo");
         }
@@ -234,6 +245,7 @@ public class MadeInChinaLedLightPage {
             test.log(Status.PASS, "Home page is verified");
             LoggerHandler.info("Home page is verified");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Home page is not verified");
             test.log(Status.FAIL, "Home page is not verified");
             LoggerHandler.error("Home page is not verified");
         }
@@ -252,6 +264,7 @@ public class MadeInChinaLedLightPage {
             test.log(Status.PASS, "Hovered on lights And Lighting ");
             LoggerHandler.info("Hovered On lights And Lighting");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Did not hover on lights And Lighting");
             test.log(Status.FAIL, "Did not hover on lights And Lighting");
             LoggerHandler.error("Did not hover over lights And Lighting");
         }
@@ -270,6 +283,7 @@ public class MadeInChinaLedLightPage {
             test.log(Status.PASS, "clicked on ledTube");
             LoggerHandler.info("clicked on ledTube");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Did not click on ledTube");
             test.log(Status.FAIL, "Did not click on ledTube");
             LoggerHandler.error("Did not click on ledTube");
         }
@@ -288,6 +302,7 @@ public class MadeInChinaLedLightPage {
             test.log(Status.PASS, "LED Tube page is verified");
             LoggerHandler.info("LED Tube page is verified");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("LED Tube page is not verified");
             test.log(Status.FAIL, "LED Tube page is not verified");
             LoggerHandler.error("LED Tube page is not verified");
         }
@@ -306,6 +321,7 @@ public class MadeInChinaLedLightPage {
             test.log(Status.PASS, "clicked on ledTubeLightFilter");
             LoggerHandler.info("clicked on ledTubeLightFilter");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Did not click on ledTubeLightFilter");
             test.log(Status.FAIL, "Did not click on ledTubeLightFilter");
             LoggerHandler.error("Did not click on ledTubeLightFilter");
         }
@@ -324,6 +340,7 @@ public class MadeInChinaLedLightPage {
             test.log(Status.PASS, "clicked on color Temprature");
             LoggerHandler.info("clicked on color Temprature");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Did not click on color Temprature");
             test.log(Status.FAIL, "Did not click on color Temprature");
             LoggerHandler.error("Did not click on color Temprature");
         }
@@ -342,6 +359,7 @@ public class MadeInChinaLedLightPage {
             test.log(Status.PASS, "clicked on color warm white");
             LoggerHandler.info("clicked on color warm white");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Did not click on color warm white");
             test.log(Status.FAIL, "Did not click on color warm white");
             LoggerHandler.error("Did not click on color warm white");
         }

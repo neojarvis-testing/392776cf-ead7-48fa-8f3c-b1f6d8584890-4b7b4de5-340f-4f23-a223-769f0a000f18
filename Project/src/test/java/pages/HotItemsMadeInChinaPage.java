@@ -49,8 +49,10 @@ public class HotItemsMadeInChinaPage {
             LoggerHandler.info("Clicked On logo");
             test.log(Status.PASS, "Clicked On logo");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Clicked On logo");
             LoggerHandler.error("Not Clicked On logo");
             test.log(Status.FAIL, "Not Clicked On logo");
+
         }
     }
     /*
@@ -69,6 +71,7 @@ public class HotItemsMadeInChinaPage {
             LoggerHandler.info("Clicked On Furniture");
             test.log(Status.PASS, "Clicked On Furniture");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Clicked On Furniture");
             LoggerHandler.error("Not Clicked On Furniture");
             test.log(Status.FAIL, "Not Clicked On Furniture");
         }
@@ -87,6 +90,7 @@ public class HotItemsMadeInChinaPage {
             LoggerHandler.info("Verified Furniture.html");
             test.log(Status.PASS, "Verified Furniture.html");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Verified Furniture.html");
             LoggerHandler.error("Not Verified Furniture.html");
             test.log(Status.FAIL, "Not Verified Furniture.html");
         }
@@ -105,6 +109,7 @@ public class HotItemsMadeInChinaPage {
             LoggerHandler.info("Verified Furniture title");
             test.log(Status.PASS, "Verified Furniture title");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Verified Furniture title");
             LoggerHandler.error("Not Verified Furniture title");
             test.log(Status.FAIL, "Not Verified Furniture title");
         }
@@ -125,6 +130,7 @@ public class HotItemsMadeInChinaPage {
             LoggerHandler.info("Clicked On Apparel Clothing");
             test.log(Status.PASS, "Clicked On Apparel Clothing");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Clicked On Apparel Clothing");
             LoggerHandler.error("Not Clicked On Apparel Clothing");
             test.log(Status.FAIL, "Not Clicked On Apparel Clothing");
         }
@@ -143,6 +149,7 @@ public class HotItemsMadeInChinaPage {
             LoggerHandler.info("Verified Apparel-Clothing.html");
             test.log(Status.PASS, "Verified Apparel-Clothing.html");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Verified Furniture.html");
             LoggerHandler.error("Not Verified Apparel-Clothing.html");
             test.log(Status.FAIL, "Not Verified Apparel-Clothing.html");
         }
@@ -161,6 +168,7 @@ public class HotItemsMadeInChinaPage {
             LoggerHandler.info("Verified Apparel Title");
             test.log(Status.PASS, "Verified Apparel Title");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Verified Apparel Title");
             LoggerHandler.error("Not Verified Apparel Title");
             test.log(Status.FAIL, "Not Verified Apparel Title");
         }
@@ -181,6 +189,7 @@ public class HotItemsMadeInChinaPage {
             LoggerHandler.info("Clicked On Auto Parts");
             test.log(Status.PASS, "Clicked On Auto Parts");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Clicked On Auto Parts");
             LoggerHandler.error("Not Clicked On Auto Parts");
             test.log(Status.FAIL, "Not Clicked On Auto Parts");
         }
@@ -199,6 +208,7 @@ public class HotItemsMadeInChinaPage {
             LoggerHandler.info("Verified Auto-Parts-Accessories.html");
             test.log(Status.PASS, "Verified Auto-Parts-Accessories.html");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Verified Auto-Parts-Accessories.html");
             LoggerHandler.error("Not Verified Auto-Parts-Accessories.html");
             test.log(Status.FAIL, "Not Verified Auto-Parts-Accessories.html");
         }
@@ -217,6 +227,7 @@ public class HotItemsMadeInChinaPage {
             LoggerHandler.info("Verified Auto Parts & Accessories Title");
             test.log(Status.PASS, "Verified Auto Parts & Accessories Title");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Verified Auto Parts & Accessories Title");
             LoggerHandler.error("Not Verified Auto Parts & Accessories Title");
             test.log(Status.FAIL, "Not Verified Auto Parts & Accessories Title");
         }
@@ -237,6 +248,7 @@ public class HotItemsMadeInChinaPage {
             LoggerHandler.info("Clicked On Bags Cases");
             test.log(Status.PASS, "Clicked On Bags Cases");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Clicked On Bags Cases");
             LoggerHandler.error("Not Clicked On Bags Cases");
             test.log(Status.FAIL, "Not Clicked On Bags Cases");
         }
@@ -255,6 +267,7 @@ public class HotItemsMadeInChinaPage {
             LoggerHandler.info("Verified Bags-Cases-Luggages.html");
             test.log(Status.PASS, "Verified Bags-Cases-Luggages.html");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Verified Bags-Cases-Luggages.html");
             LoggerHandler.error("Not Verified Bags-Cases-Luggages.html");
             test.log(Status.FAIL, "Not Verified Bags-Cases-Luggages.html");
         }
@@ -273,6 +286,7 @@ public class HotItemsMadeInChinaPage {
             LoggerHandler.info("Verified Bags, Cases & Luggages title");
             test.log(Status.PASS, "Verified Bags, Cases & Luggages title");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Verified Bags, Cases & Luggages title");
             LoggerHandler.error("Not Verified Bags, Cases & Luggages title");
             test.log(Status.FAIL, "Not Verified Bags, Cases & Luggages title");
         }
@@ -293,6 +307,7 @@ public class HotItemsMadeInChinaPage {
             LoggerHandler.info("Clicked On Computer Products");
             test.log(Status.PASS, "Clicked On Computer Products");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Clicked On Computer Products");
             LoggerHandler.error("Not Clicked On Computer Products");
             test.log(Status.FAIL, "Not Clicked On Computer Products");
         }
@@ -311,6 +326,7 @@ public class HotItemsMadeInChinaPage {
             LoggerHandler.info("Verified Computer-Products.html");
             test.log(Status.PASS, "Verified Computer-Products.html");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Verified Computer-Products.html");
             LoggerHandler.error("Not Verified Computer-Products.html");
             test.log(Status.FAIL, "Not Verified Computer-Products.html");
         }
@@ -329,6 +345,7 @@ public class HotItemsMadeInChinaPage {
             LoggerHandler.info("Verified Computer Products title");
             test.log(Status.PASS, "Verified Computer Products title");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Verified Computer Products title");
             LoggerHandler.error("Not Verified Computer Products title");
             test.log(Status.FAIL, "Not Verified Computer Products title");
         }
@@ -349,6 +366,7 @@ public class HotItemsMadeInChinaPage {
             LoggerHandler.info("Clicked On Consumer Electronic");
             test.log(Status.PASS, "Clicked On Consumer Electronic");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Clicked On Consumer Electronic");
             LoggerHandler.error("Not Clicked On Consumer Electronic");
             test.log(Status.FAIL, "Not Clicked On Consumer Electronic");
         }
@@ -367,6 +385,7 @@ public class HotItemsMadeInChinaPage {
             LoggerHandler.info("Verified Consumer-Electronics.html");
             test.log(Status.PASS, "Verified Consumer-Electronics.html");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Verified Consumer-Electronics.html");
             LoggerHandler.error("Not Verified Consumer-Electronics.html");
             test.log(Status.FAIL, "Not Verified Consumer-Electronics.html");
         }
@@ -385,6 +404,7 @@ public class HotItemsMadeInChinaPage {
             LoggerHandler.info("Verified Consumer Electronics title");
             test.log(Status.PASS, "Verified Consumer Electronics title");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Verified Consumer Electronics title");
             LoggerHandler.error("Not Verified Consumer Electronics title");
             test.log(Status.FAIL, "Not Verified Consumer Electronics title");
         }
@@ -405,6 +425,7 @@ public class HotItemsMadeInChinaPage {
             LoggerHandler.info("Clicked On Electrical Equipment");
             test.log(Status.PASS, "Clicked On Electrical Equipment");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Clicked On Electrical Equipment");
             LoggerHandler.error("Not Clicked On Electrical Equipment");
             test.log(Status.FAIL, "Not Clicked On Electrical Equipment");
         }
@@ -423,6 +444,7 @@ public class HotItemsMadeInChinaPage {
             LoggerHandler.info("Verified Electrical-Equipments.html");
             test.log(Status.PASS, "Verified Electrical-Equipments.html");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Verified Electrical-Equipments.html");
             LoggerHandler.error("Not Verified Electrical-Equipments.html");
             test.log(Status.FAIL, "Not Verified Electrical-Equipments.html");
         }
@@ -441,6 +463,7 @@ public class HotItemsMadeInChinaPage {
             LoggerHandler.info("Verified Electrical Equipment title");
             test.log(Status.PASS, "Verified Electrical Equipment title");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Verified Electrical Equipment title");
             LoggerHandler.error("Not Verified Electrical Equipment title");
             test.log(Status.FAIL, "Not Verified Electrical Equipment title");
         }
@@ -461,6 +484,7 @@ public class HotItemsMadeInChinaPage {
             LoggerHandler.info("Clicked On Electronic Components");
             test.log(Status.PASS, "Clicked On Electronic Components");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Clicked On Electronic Components");
             LoggerHandler.error("Not Clicked On Electronic Components");
             test.log(Status.FAIL, "Not Clicked On Electronic Components");
         }
@@ -479,6 +503,7 @@ public class HotItemsMadeInChinaPage {
             LoggerHandler.info("Verified Electronic-Components.html");
             test.log(Status.PASS, "Verified Electronic-Components.html");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Verified Electronic-Components.html");
             LoggerHandler.error("Not Verified Electronic-Components.html");
             test.log(Status.FAIL, "Not Verified Electronic-Components.html");
         }
@@ -497,6 +522,7 @@ public class HotItemsMadeInChinaPage {
             LoggerHandler.info("Verified Electronic Components title");
             test.log(Status.PASS, "Verified Electronic Components title");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Verified Electronic Components title");
             LoggerHandler.error("Not Verified Electronic Components title");
             test.log(Status.FAIL, "Not Verified Electronic Components title");
         }
@@ -517,6 +543,7 @@ public class HotItemsMadeInChinaPage {
             LoggerHandler.info("Clicked On Gift Crafts");
             test.log(Status.PASS, "Clicked On Gift Crafts");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Clicked On Gift Crafts");
             LoggerHandler.error("Not Clicked On Gift Crafts");
             test.log(Status.FAIL, "Not Clicked On Gift Crafts");
         }
@@ -535,6 +562,7 @@ public class HotItemsMadeInChinaPage {
             LoggerHandler.info("Verified Gifts-Crafts-Collectibles.html");
             test.log(Status.PASS, "Verified Gifts-Crafts-Collectibles.html");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Verified Gifts-Crafts-Collectibles.html");
             LoggerHandler.error("Not Verified Gifts-Crafts-Collectibles.html");
             test.log(Status.FAIL, "Not Verified Gifts-Crafts-Collectibles.html");
         }
@@ -553,6 +581,7 @@ public class HotItemsMadeInChinaPage {
             LoggerHandler.info("Verified Gifts, Crafts & Collectibles title");
             test.log(Status.PASS, "Verified Gifts, Crafts & Collectibles title");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Verified Gifts, Crafts & Collectibles title");
             LoggerHandler.error("Not Verified Gifts, Crafts & Collectibles title");
             test.log(Status.FAIL, "Not Verified Gifts, Crafts & Collectibles title");
         }
@@ -573,6 +602,7 @@ public class HotItemsMadeInChinaPage {
             LoggerHandler.info("Clicked On MotorCycles");
             test.log(Status.PASS, "Clicked On MotorCycles");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Clicked On MotorCycles");
             LoggerHandler.error("Not Clicked On MotorCycles");
             test.log(Status.FAIL, "Not Clicked On MotorCycles");
         }
@@ -591,6 +621,7 @@ public class HotItemsMadeInChinaPage {
             LoggerHandler.info("Verified Motorcycles-Scooters.html");
             test.log(Status.PASS, "Verified Motorcycles-Scooters.html");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Verified Motorcycles-Scooters.html");
             LoggerHandler.error("Not Verified Motorcycles-Scooters.html");
             test.log(Status.FAIL, "Not Verified Motorcycles-Scooters.html");
         }
@@ -609,6 +640,7 @@ public class HotItemsMadeInChinaPage {
             LoggerHandler.info("Verified Motorcycles & Scooters title");
             test.log(Status.PASS, "Verified Motorcycles & Scooters title");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Verified Motorcycles & Scooters title");
             LoggerHandler.error("Not Verified Motorcycles & Scooters title");
             test.log(Status.FAIL, "Not Verified Motorcycles & Scooters title");
         }
@@ -629,6 +661,7 @@ public class HotItemsMadeInChinaPage {
             Screenshot.captureFullScreenshot("Sealing Package");
             test.log(Status.PASS, "Clicked On Sealing Package");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Clicked On Sealing Package");
             LoggerHandler.error("Not Clicked On Sealing Package");
             test.log(Status.FAIL, "Not Clicked On Sealing Package");
         }
@@ -647,6 +680,7 @@ public class HotItemsMadeInChinaPage {
             LoggerHandler.info("Verified Sealing-Packaging-Storage-Shelving.html");
             test.log(Status.PASS, "Verified Sealing-Packaging-Storage-Shelving.html");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Verified Sealing-Packaging-Storage-Shelving.html");
             LoggerHandler.error("Not Verified Sealing-Packaging-Storage-Shelving.html");
             test.log(Status.FAIL, "Not Verified Sealing-Packaging-Storage-Shelving.html");
         }
@@ -665,6 +699,7 @@ public class HotItemsMadeInChinaPage {
             LoggerHandler.info("Verified Sealing, Packaging, Storage & Shelving title");
             test.log(Status.PASS, "Verified Sealing, Packaging, Storage & Shelving title");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Verified Sealing, Packaging, Storage & Shelving titlel");
             LoggerHandler.error("Not Verified Sealing, Packaging, Storage & Shelving title");
             test.log(Status.FAIL, "Not Verified Sealing, Packaging, Storage & Shelving title");
         }
@@ -685,6 +720,7 @@ public class HotItemsMadeInChinaPage {
             LoggerHandler.info("Clicked On Building Materials");
             test.log(Status.PASS, "Clicked On Building Materials");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Clicked On Building Materials");
             LoggerHandler.error("Not Clicked On Building Materials");
             test.log(Status.FAIL, "Not Clicked On Building Materials");
         }
@@ -703,6 +739,7 @@ public class HotItemsMadeInChinaPage {
             LoggerHandler.info("Verified Building-Materials-Supplies.html");
             test.log(Status.PASS, "Verified Building-Materials-Supplies.html");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Verified Building-Materials-Supplies.html");
             LoggerHandler.error("Not Verified Building-Materials-Supplies.html");
             test.log(Status.FAIL, "Not Verified Building-Materials-Supplies.html");
         }
@@ -721,6 +758,7 @@ public class HotItemsMadeInChinaPage {
             LoggerHandler.info("Verified Building Materials & Supplies title");
             test.log(Status.PASS, "Verified Building Materials & Supplies title");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Verified Building Materials & Supplies title");
             LoggerHandler.error("Not Verified Building Materials & Supplies title");
             test.log(Status.FAIL, "Not Verified Building Materials & Supplies title");
         }
