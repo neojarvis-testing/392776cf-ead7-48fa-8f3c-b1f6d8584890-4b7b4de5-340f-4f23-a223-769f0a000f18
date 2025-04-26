@@ -1,5 +1,5 @@
 Feature: Category Functionality
-	Scenario: Category  navigation Functionality
+	Scenario Outline: Category  navigation Functionality
         When I click on popup and click on Manufacturing & Processing Machinery  and verify heading "Manufacturing & Processing Machinery" and navigate Back
         When I click on popup and click on Consumer Electronics   and verify heading "Consumer Electronics" and navigate Back
         When I click on popup and click on Industrial Equipment & Components  and verify heading "Industrial Equipment & Components" and navigate Back

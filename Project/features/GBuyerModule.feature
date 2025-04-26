@@ -1,5 +1,5 @@
 Feature: Functionality in buyer module
-    Scenario: Functionality in buyer module
+    Scenario Outline: Functionality in buyer module
         Given I click On POP UP.
         When I hover on buyer module.
         And I click on new user guide.

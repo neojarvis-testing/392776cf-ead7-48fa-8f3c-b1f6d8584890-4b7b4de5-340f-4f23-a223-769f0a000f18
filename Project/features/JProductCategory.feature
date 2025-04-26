@@ -1,5 +1,5 @@
 Feature: Product Directory Functionality
-	Scenario: Product Directory Functionality
+	Scenario Outline: Product Directory Functionality
         Given I click on Popup.
         When I hover in Buyers.
         And I click on Product Directory

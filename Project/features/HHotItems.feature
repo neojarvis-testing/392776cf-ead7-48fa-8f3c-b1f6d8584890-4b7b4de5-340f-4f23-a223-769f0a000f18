@@ -1,6 +1,6 @@
 Feature: HotItems Functionality
     
-    Scenario: Verifying all HotItems
+    Scenario Outline: Verifying all HotItems
         Given I close the PopUp.
         When I click on the Furniture.
         And I Verify the Furniture Url "Furniture.html".

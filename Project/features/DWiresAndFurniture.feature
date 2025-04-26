@@ -1,5 +1,5 @@
 Feature: Searching for wires and furniture.
-    Scenario: Searching wires and furniture.
+    Scenario Outline: Searching wires and furniture.
         Given I click on xmark on popup.
         When I click on SearchBar on top.
         And I send data to searchBar "Wires"

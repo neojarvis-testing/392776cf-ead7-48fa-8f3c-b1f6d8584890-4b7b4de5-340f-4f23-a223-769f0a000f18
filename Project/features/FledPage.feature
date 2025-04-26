@@ -1,5 +1,5 @@
 Feature: Checking Functionality of Led Page
-    Scenario: Ordering an Led Light
+    Scenario Outline: Ordering an Led Light
         Given I close the pop-up.
         When I click and send data "LED lights".
         When I click on More.

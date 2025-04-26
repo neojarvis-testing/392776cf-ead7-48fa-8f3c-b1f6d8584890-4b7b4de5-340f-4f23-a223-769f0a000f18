@@ -1,5 +1,5 @@
 Feature: Contacting the supplier on the Spices page.
-    Scenario: Spices page contact supplier.
+    Scenario Outline: Spices page contact supplier.
         Given I click on the X mark on the popup.
         When I click on the searchBar.
         And I send the data to searchBar "<values>".

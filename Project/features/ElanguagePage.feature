@@ -1,5 +1,5 @@
 Feature: Language Change Functionality
-    Scenario: Checking the language changes
+    Scenario Outline: Checking the language changes
         Given I close the popup. 
         When I hover on Sign In.
         And I click on Join Free. 

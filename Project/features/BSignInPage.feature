@@ -1,5 +1,5 @@
 Feature:Obsrerve the working of Signin process
-    Scenario:Check the Registration and login process in the Made In China Website
+    Scenario Outline:Check the Registration and login process in the Made In China Website
         Given I close the close the popop
         When I verify the SignIn label text
         And I hover over the Sign Up or Join option

@@ -1,6 +1,6 @@
 Feature: Diamond Membership Functionality
 
-    Scenario: Search For Electronics
+    Scenario Outline: Search For Electronics
         Given I click on the Popup.
         When I clicked on the Search Bar.  
         And I send data into the Search Bar and clicked on Search Icon "Electronics".  
