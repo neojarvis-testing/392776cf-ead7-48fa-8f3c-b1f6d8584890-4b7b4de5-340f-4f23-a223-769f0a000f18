@@ -32,6 +32,7 @@ public class MadeInChinaBuyerModulePage {
             test.log(Status.PASS, "pop up closed");
             LoggerHandler.info("popup closed");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Failed to close the pop up");
             test.log(Status.FAIL, "Failed to close the pop up");
             LoggerHandler.error("Failed to close the popup");
         }
@@ -51,6 +52,7 @@ public class MadeInChinaBuyerModulePage {
             test.log(Status.PASS, "Hovered on Buyer");
             LoggerHandler.info("Hovered on  Buyer");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Failed to locate the element to hover");
             test.log(Status.FAIL, "Failed to locate the element to hover");
             LoggerHandler.error("Failed to locate the element to be hovered");
         }
@@ -71,6 +73,7 @@ public class MadeInChinaBuyerModulePage {
             test.log(Status.PASS, "Clicked on the new user guide");
             LoggerHandler.info("Clicked on new user guide");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Couldn't click on the New User Guide");
             test.log(Status.FAIL, "Couldn't click on the New User Guide");
             LoggerHandler.error("Couldn't click on new user guide");
         }
@@ -89,6 +92,7 @@ public class MadeInChinaBuyerModulePage {
             test.log(Status.PASS, "URL was Verified");
             LoggerHandler.info("URL Verified");
         } catch (AssertionError e) {
+            Screenshot.captureFullErrorScreenshot("URL Verified");
             test.log(Status.FAIL, "Url didn't match");
             LoggerHandler.error("Url didi not match");
         }
@@ -108,6 +112,7 @@ public class MadeInChinaBuyerModulePage {
             LoggerHandler.info("Title verified successfully");
         }
         catch(AssertionError e){
+            Screenshot.captureFullErrorScreenshot("Invalid Title");
             test.log(Status.FAIL, "Invalid Title");
             LoggerHandler.error("Not a valid Title");
         }
@@ -127,6 +132,7 @@ public class MadeInChinaBuyerModulePage {
             test.log(Status.PASS, "Clicked on Logo ");
             LoggerHandler.info("Clicked on logo");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Couldn't click on logo");
             test.log(Status.FAIL, "Couldn't click on logo");
             LoggerHandler.error("Couldn't click on logo");
         }
@@ -146,6 +152,7 @@ public class MadeInChinaBuyerModulePage {
             test.log(Status.PASS, "Clicked on Audited Suppliers");
             LoggerHandler.info("Clicked on Audited Suppliers");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Couldn't click on Audited Suupliers");
             test.log(Status.FAIL, "Couldn't click on Audited Suupliers");
             LoggerHandler.error("Couldn't click on Audited Suppliers");
         }
@@ -164,6 +171,7 @@ public class MadeInChinaBuyerModulePage {
             test.log(Status.PASS, "Verified url contains Audited Suppliers");
             LoggerHandler.info("Verified url contains Audited Suppliers");
         } catch (AssertionError e) {
+            Screenshot.captureFullErrorScreenshot("Invalid URL");
             test.log(Status.FAIL, "Invalid URL");
             LoggerHandler.error("Not valid URL");
         }
@@ -182,6 +190,7 @@ public class MadeInChinaBuyerModulePage {
             test.log(Status.PASS, "Audited Suppliers Title Verified Successfully");
             LoggerHandler.info("Audites Suppliers Title Verified Successfully");
         } catch (AssertionError e) {
+            Screenshot.captureFullErrorScreenshot("Couldn't verify the title Audited Supplierd");
             test.log(Status.FAIL, "Couldn't verify the title Audited Suppliers");
             LoggerHandler.error("Couldn't verify the title Audited Suppliers");
         }
@@ -201,6 +210,7 @@ public class MadeInChinaBuyerModulePage {
             test.log(Status.PASS, "Clicked on Meet suppliers link");
             LoggerHandler.info("Clicked on the Meet suppliers link");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Didn't Clicked on Meet suppliers link");
             test.log(Status.FAIL, "Couldn't find meet suppliers link");
             LoggerHandler.error("Didn't Clicked on Meet suppliers link");
         }
@@ -221,6 +231,7 @@ public class MadeInChinaBuyerModulePage {
             test.log(Status.PASS, "Verified Private sourcing meeting url");
             LoggerHandler.info("Verified Private sourcing meeting url");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Invalid URL");
             test.log(Status.FAIL, "Invalid URL");
             LoggerHandler.error(" It is an invalid URL");
         }
@@ -239,6 +250,7 @@ public class MadeInChinaBuyerModulePage {
             test.log(Status.PASS, "Meet Suppliers Verified Successfully");
             LoggerHandler.info("Meet Suppliers Verified Successfully");
         } catch (AssertionError e) {
+            Screenshot.captureFullErrorScreenshot("Couldn't verify the title contains Meet Suppliers");
             test.log(Status.FAIL, "Couldn't verify the title contains Meet Suppliers");
             LoggerHandler.error("Couldn't verify the title contains Meet Suppliers");
         }

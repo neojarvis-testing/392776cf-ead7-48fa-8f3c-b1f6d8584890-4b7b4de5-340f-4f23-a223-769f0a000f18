@@ -6,6 +6,7 @@ import com.aventstack.extentreports.Status;
 import uistore.MadeInChinaDiamondMembershipPageLocator;
 import utils.Base;
 import utils.LoggerHandler;
+import utils.Screenshot;
 import utils.WebDriverHelper;
 
 public class DiamondMembershipMadeInChinaPage {
@@ -54,6 +55,7 @@ public class DiamondMembershipMadeInChinaPage {
             LoggerHandler.info("Clicked On Search Bar");
             test.log(Status.PASS, "Clicked On Search Bar");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Clicked On Search Bar");
             LoggerHandler.error("Not Clicked On Search Bar");
             test.log(Status.FAIL, "Not Clicked On Search Bar");
         }
@@ -72,6 +74,7 @@ public class DiamondMembershipMadeInChinaPage {
             LoggerHandler.info("Clicked on Search icon");
             test.log(Status.PASS, "Clicked on Search icon");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Clicked On Search icon");
             LoggerHandler.error("Not Clicked on Search icon");
             test.log(Status.FAIL, "Not Clicked on Search icon");
         }
@@ -90,6 +93,7 @@ public class DiamondMembershipMadeInChinaPage {
             LoggerHandler.info("Verified Electronics");
             test.log(Status.PASS, "Verified Electronics");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Verified Electronics");
             LoggerHandler.error("Not Verified Electronics");
             test.log(Status.FAIL, "Not Verified Electronics");
         }
@@ -108,6 +112,7 @@ public class DiamondMembershipMadeInChinaPage {
             LoggerHandler.info("Clicked ON Supplier List");
             test.log(Status.PASS, "Clicked ON Supplier List");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Clicked ON Supplier List");
             LoggerHandler.error("Not Clicked ON Supplier List");
             test.log(Status.FAIL, "Not Clicked ON Supplier List");
         }
@@ -126,6 +131,7 @@ public class DiamondMembershipMadeInChinaPage {
             LoggerHandler.info("Clicked on consumer");
             test.log(Status.PASS, "Clicked on consumer");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Clicked on consumer");
             LoggerHandler.error("Not Clicked on consumer");
             test.log(Status.FAIL, "Not Clicked on consumer");
         }
@@ -144,6 +150,7 @@ public class DiamondMembershipMadeInChinaPage {
             LoggerHandler.info("Verified Consumer");
             test.log(Status.PASS, "Verified Consumer");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Verified Consumer");
             LoggerHandler.error("Not Verified Consumer");
             test.log(Status.FAIL, "Not Verified Consumer");
         }
@@ -162,6 +169,7 @@ public class DiamondMembershipMadeInChinaPage {
             LoggerHandler.info("Clicked On Is9000");
             test.log(Status.PASS, "Clicked On Is9000");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Clicked On Is9000");
             LoggerHandler.error("Not Clicked On Is9000");
             test.log(Status.FAIL, "Not Clicked On Is9000");
         }
@@ -180,6 +188,7 @@ public class DiamondMembershipMadeInChinaPage {
             LoggerHandler.info("Verified Is9000");
             test.log(Status.PASS, "Verified Is9000");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not Verified Is9000");
             LoggerHandler.error("Not Verified Is9000");
             test.log(Status.FAIL, "Not Verified Is9000");
         }

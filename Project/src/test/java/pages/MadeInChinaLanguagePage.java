@@ -32,6 +32,7 @@ public class MadeInChinaLanguagePage {
             test.log(Status.PASS, "closed pop up");
             LoggerHandler.info("closed pop up");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Did not close pop up");
             test.log(Status.FAIL, "Did not close pop up");
             LoggerHandler.error("Did not close pop up");
         }
@@ -50,6 +51,7 @@ public class MadeInChinaLanguagePage {
             test.log(Status.PASS, "Hovered on SignIn");
             LoggerHandler.info("Hovered On SignIn");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Did not hover on SignIn");
             test.log(Status.FAIL, "Did not hover on SignIn");
             LoggerHandler.error("Did not hover over SignIn");
         }
@@ -68,6 +70,7 @@ public class MadeInChinaLanguagePage {
             test.log(Status.PASS, "clicked on Join Free");
             LoggerHandler.info("clicked on Join Free");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Did not click on Join Free");
             test.log(Status.FAIL, "Did not click on Join Free");
             LoggerHandler.error("Did not click on Join Free");
         }
@@ -86,6 +89,7 @@ public class MadeInChinaLanguagePage {
             test.log(Status.PASS, "Create account is displayed");
             LoggerHandler.info("Create account is displayed");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Create account is not displayed");
             test.log(Status.FAIL, "Create account is not displayed");
             LoggerHandler.error("Create account is not displayed");
         }
@@ -104,6 +108,7 @@ public class MadeInChinaLanguagePage {
             test.log(Status.PASS, "clicked on Sign in now");
             LoggerHandler.info("clicked on Sign in now");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Did not click on Sign in now");
             test.log(Status.FAIL, "Did not click on Sign in now");
             LoggerHandler.error("Did not click on Sign in now");
         }
@@ -122,6 +127,7 @@ public class MadeInChinaLanguagePage {
             test.log(Status.PASS, "Verified that we are on sign in page");
             LoggerHandler.info("Verified that we are on sign in page");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not verified that we are on sign in page");
             test.log(Status.FAIL, "Not verified that we are on sign in page");
             LoggerHandler.error("Not verified that we are on sign in page");
         }
@@ -141,6 +147,7 @@ public class MadeInChinaLanguagePage {
             test.log(Status.PASS, "clicked on spanish");
             LoggerHandler.info("clicked on spanish");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Did not click on spanish");
             test.log(Status.FAIL, "Did not click on spanish");
             LoggerHandler.error("Did not click on spanish");
         }
@@ -160,6 +167,7 @@ public class MadeInChinaLanguagePage {
             test.log(Status.PASS, "changed to spanish");
             LoggerHandler.info("changed to spanish");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not changed to spanish");
             test.log(Status.FAIL, "Not changed to spanish");
             LoggerHandler.error("Not changed to spanish");
         }
@@ -179,6 +187,7 @@ public class MadeInChinaLanguagePage {
             test.log(Status.PASS, "clicked on German");
             LoggerHandler.info("clicked on German");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Did not click on German");
             test.log(Status.FAIL, "Did not click on German");
             LoggerHandler.error("Did not click on German");
         }
@@ -198,6 +207,7 @@ public class MadeInChinaLanguagePage {
             test.log(Status.PASS, "changed to German");
             LoggerHandler.info("changed to German");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not changed to German");
             test.log(Status.FAIL, "Not changed to German");
             LoggerHandler.error("Not changed to German");
         }
@@ -217,6 +227,7 @@ public class MadeInChinaLanguagePage {
             test.log(Status.PASS, "clicked on French");
             LoggerHandler.info("clicked on French");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not changed to French");
             test.log(Status.FAIL, "Did not click on French");
             LoggerHandler.error("Did not click on French");
         }
@@ -236,6 +247,7 @@ public class MadeInChinaLanguagePage {
             test.log(Status.PASS, "changed to French");
             LoggerHandler.info("changed to French");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Not changed to French");
             test.log(Status.FAIL, "Not changed to French");
             LoggerHandler.error("Not changed to French");
         }
@@ -255,6 +267,7 @@ public class MadeInChinaLanguagePage {
             test.log(Status.PASS, "clicked on Russian");
             LoggerHandler.info("clicked on Russian");
         } catch (Exception e) {
+            Screenshot.captureFullErrorScreenshot("Did not click to Russian");
             test.log(Status.FAIL, "Did not click on Russian");
             LoggerHandler.error("Did not click on Russian");
         }
@@ -273,7 +286,7 @@ public class MadeInChinaLanguagePage {
             Screenshot.captureFullScreenshot("Russian");
             test.log(Status.PASS, "changed to Russian");
             LoggerHandler.info("changed to Russian");
-        } catch (Exception e) {
+        } catch (Exception e) Screenshot.captureFullErrorScreenshot("Not changed to Russian");
             test.log(Status.FAIL, "Not changed to Russian");
             LoggerHandler.error("Not changed to Russian");
         }
