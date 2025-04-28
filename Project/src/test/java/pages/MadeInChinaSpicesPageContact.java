@@ -94,6 +94,8 @@ public class MadeInChinaSpicesPageContact {
         try {
             helper.waitForElementToBeVisible(MadeInChinaSpicesPageContactLocators.searchBar, 10);
             helper.enterAction(MadeInChinaSpicesPageContactLocators.searchBar);
+            Reporter.captureScreenshot("Spices Products");
+            Reporter.attachScreenshotToReport("Spices Products", test, "Spices Page");
             test.log(Status.PASS, "Enter action performed");
             LoggerHandler.info("Enter action performed");
         } catch (Exception e) {

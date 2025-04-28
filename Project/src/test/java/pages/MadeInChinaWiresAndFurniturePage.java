@@ -9,6 +9,7 @@ import uistore.MadeInChinaSpicesPageContactLocators;
 import uistore.MadeInChinaWiresAndFurnitureLocatores;
 import utils.Base;
 import utils.LoggerHandler;
+import utils.Reporter;
 import utils.Screenshot;
 import utils.WebDriverHelper;
 
@@ -213,6 +214,8 @@ public class MadeInChinaWiresAndFurniturePage {
     public void clikOnPagination2Page(){
         try {
             helper.clickOnElement(MadeInChinaWiresAndFurnitureLocatores.clickOn2InPagination);
+            Reporter.captureScreenshot("Pigination 2");
+            Reporter.attachScreenshotToReport("Pagination", test, "Pagination Picture");
             test.log(Status.PASS, "Clicked on the clickOn2InPagination");
             LoggerHandler.info("Clicked on the clickOn2InPagination");
         } catch (Exception e) {

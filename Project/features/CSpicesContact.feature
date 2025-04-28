@@ -1,4 +1,5 @@
 Feature: Contacting the supplier on the Spices page.
+    @imp
     Scenario: Spices page contact supplier.
         Given I click on the X mark on the popup.
         When I click on the searchBar.
