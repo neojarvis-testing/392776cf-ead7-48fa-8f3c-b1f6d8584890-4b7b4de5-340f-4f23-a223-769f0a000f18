@@ -134,6 +134,7 @@ public class MadeInChinaWiresAndFurniturePage {
             helper.waitForElementToBeVisible(MadeInChinaWiresAndFurnitureLocatores.firstProduct, 10);
             helper.clickOnElement(MadeInChinaWiresAndFurnitureLocatores.firstProduct);
             helper.switchToNewWindow();
+            
             test.log(Status.PASS, "Clicked on the firstProduct");
             LoggerHandler.info("Clicked on the firstProduct");
         } catch (Exception e) {
